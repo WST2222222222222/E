@@ -248,13 +248,13 @@ export default function SettingsButton(props) {
                             <MDBBtn className='btn-close' color='none' onClick={toggleOutwardsLink} title="Click to close this modal"></MDBBtn>
                         </MDBModalHeader>
                         <MDBModalBody>
-                            This link redirects you to <strong>github.com</strong>.<br/><br/> If you'd like to continue please press "Continue". If not, press "Cancel."<br/><br/>Since santatracker.live is built off the TEBCC v6 codebase we must open source our tracker. This link follows to our GitHub.
+                            This link redirects you to <strong>github.com/nightly-shadooow/stl-tracker-public</strong>.<br/><br/> If you'd like to continue please press "Continue". If not, press "Cancel."<br/><br/>Since santatracker.live is built off the TEBCC v6 codebase we must open source our tracker. This link follows to our GitHub.
                         </MDBModalBody>
                         <MDBModalFooter>
                             <MDBBtn color="secondary" onClick={toggleOutwardsLink} title="Click to close this modal">
                                 Close
                             </MDBBtn>
-                            <a href="https://github.com"> <MDBBtn color="primary"className="outwardRedirect">
+                            <a href="https://github.com/nightly-shadooow/stl-tracker-public"> <MDBBtn color="primary"className="outwardRedirect">
                                 Continue
                             </MDBBtn></a>
                         </MDBModalFooter>
