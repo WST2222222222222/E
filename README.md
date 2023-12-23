@@ -1,8 +1,8 @@
-# TEBCC v6
-This is the codebase for track.easterbunny.cc Version 6.
+# STL v1, TEBCC v6
+This is the codebase for santatracker.live v1, based off of track.easterbunny.cc Version 6.
 
-# What's different between v5 and v6?
-The entire codebase has been rewritten in React. It's now much more readable.
+# Heads up!
+This codebase is the same as used in production, except our icons and music that we hold rights to have been removed. Everything else is as is.
 
 # PLEASE READ THIS SECTION.
 TEBCC is a complex tracker with a lot of moving parts. While Version 6 is MUCH better compared to v5.x code, it's still complex and has a lot of moving parts. You NEED to have a solid understanding of JavaScript, React, and Python in addition to general software engineering knowledge to get TEBCC to work properly.

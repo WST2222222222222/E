@@ -366,22 +366,22 @@ class MapBase extends React.Component {
         }
 
         this.santa_icon = {
-            url: "https://www.santatracker.live/icons/santa-fly.gif",
+            url: "YOUR URL",
             scaledSize: new window.google.maps.Size(85, 85)
         }
 
         this.santa_icon_pt = {
-            url: "https://www.santatracker.live/icons/santa-fly.gif",
+            url: "YOUR URL",
             scaledSize: new window.google.maps.Size(100, 100)
         }
 
         this.santa_icon_deliver = {
-            url: "https://www.santatracker.live/icons/santa-unload.gif",
+            url: "YOUR URL",
             scaledSize: new window.google.maps.Size(100, 100)
         }
 
         this.gift_icon = {
-            url: "https://www.santatracker.live/icons/stops.png",
+            url: "YOUR URL",
             scaledSize: new window.google.maps.Size(24, 24)
         }
 

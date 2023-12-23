@@ -87,21 +87,21 @@ class MetricBoxBase extends React.Component {
 
     renderBoxImage() {
         if (this.state.metricVisible === "gifts") {
-            return <img src="https://www.santatracker.live/icons/present.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "cookies") {
-            return <img src="https://www.santatracker.live/icons/cookies.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "stockings") {
-            return <img src="https://www.santatracker.live/icons/stockings.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "milk") {
-            return <img src="https://www.santatracker.live/icons/milk.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "carrots") {
-            return <img src="https://www.santatracker.live/icons/carrots.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "distance") {
-            return <img src="https://www.santatracker.live/icons/stops.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "speed") {
-            return <img src="https://www.santatracker.live/icons/speed.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         } else if (this.state.metricVisible === "distancefromyou") {
-            return <img src="https://www.santatracker.live/icons/stops.png" className="MetricIcon"/>
+            return <img src="YOUR URL" className="MetricIcon"/>
         }
     }
 
