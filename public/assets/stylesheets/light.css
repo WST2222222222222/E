@@ -1,0 +1,98 @@
+/*  Easter Bunny Tracker (track.easterbunny.cc) CSS Assets v6.1.2
+    Copyright (C) 2023  track.easterbunny.cc 
+    
+    track.easterbunny.cc is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    track.easterbunny.cc is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with track.easterbunny.cc.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/*
+    Source code is available at https://gitlab.com/track-easterbunny-cc/tebcc
+    License is available at https://track.easterbunny.cc/license
+*/
+
+.top-card {
+    background-color: #ffffff;
+    color: #212529 !important;
+}
+
+.top-card-nobg {
+    color: #212529 !important;
+}
+
+.list-group-item-action {
+    color: #495057
+}
+
+.styledhr {
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+a:not([href]):not([tabindex]),
+a:not([href]):not([tabindex]):focus {
+    color: #009688;
+}
+
+a:not([href]):not([tabindex]):hover {
+    color: #004a43;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sharelink {
+    cursor: pointer
+}
+
+.btn-stack {
+    background-color: #ffffff;
+    color: #212529 !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.btn-left:active:hover {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+}
+
+.btn-left:hover:focus {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+}
+
+.btn-left:active {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+}
+
+.btn-left:focus {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+}
+
+.btn-left:active:focus {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 100%);
+}
+
+.btn-left:hover {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 90%);
+}
+
+code {
+    color: #e91e63;
+}
+
+.defaultZoom {
+    color: #000000
+}
+

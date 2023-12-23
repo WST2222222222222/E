@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<!--  
+    Easter Bunny Tracker (track.easterbunny.cc) v6.1.2
+    Copyright (C) 2023  track.easterbunny.cc 
+
+    track.easterbunny.cc is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    track.easterbunny.cc is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with track.easterbunny.cc.  If not, see <https://www.gnu.org/licenses/>. 
+-->
+
+<!--
+    Source code is available at https://gitlab.com/track-easterbunny-cc/tebcc
+    License is available at https://track.easterbunny.cc/license
+-->
+
+<head>
+<!-- Canonical link - Should be set to track.easterbunny.cc for the countdown/pre-tracking/index, otherwise just the url -->
+<link rel="canonical" href="https://track.easterbunny.cc/faq/" />
+<meta name="description" content="FAQs for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQs - Easter Bunny Tracker">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="track.easterbunny.cc">
+<meta property="og:url" content="https://track.easterbunny.cc/faq/">
+<meta property="og:description" content="FAQs for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta property="og:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:secure_url" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta property="og:image:width" content="384">
+<meta property="og:image:height" content="384">
+<meta name="twitter:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta name="twitter:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta name="twitter:creator" content="@bunny_tracking">
+<meta name="twitter:title" content="FAQs - Easter Bunny Tracker">
+<meta name="twitter:description" content="FAQs for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://track.easterbunny.cc/faq/">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/manifests/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/light-faq.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/dark-faq.css" crossorigin="anonymous" disabled>
+<link rel="stylesheet" href="/assets/stylesheets/light.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/dark.css" crossorigin="anonymous" disabled>
+<link rel="stylesheet" href="/assets/stylesheets/plead.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/linkwrapper.css" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" integrity="sha256-tS9rYBF0HnbO+ivkEWS7ybM7ujNLmtFbA6utN7YJ2YM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-HrzIlTa1k5W3mxabXMBdKKFMaDKTs91JrU+iXK9X1bEON72SvRxLr5ZQD+f2vDJm+zOlHzWNDfz4/tLYAuWtZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/appswitch.js"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover"/>
+
+<title>FAQs - Easter Bunny Tracker 2023</title>
+</head>
+
+<style>
+  body {
+    font-family: 'Roboto'
+  }
+
+  .top-card {
+    touch-action: manipulation;
+  }
+
+  .styledhr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .material-icons {
+    font-feature-settings: "liga"
+  }
+
+  .btn-override {
+    font-size: 1.3rem;
+    padding-left: 10px;
+    text-transform: none;
+    font-weight: 400;
+    white-space: normal;
+  }
+
+  .maintext-override {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 575px) {
+    .maintext-override {
+      font-size: .95rem;
+    }
+
+    .btn-override {
+      font-size: 1.25rem;
+    }
+  }
+
+  .h3pad {
+    margin-bottom: 20px
+  }
+  
+  .material-icons {
+    bottom: -0.27rem;
+    position: relative;
+  }
+</style>
+
+<script>
+var ls_avail = true;
+var appearance = "automatic";
+var mapmode = "street";
+var bunnybounce = "off";
+var weathersummary = "off";
+var ebarrival = "on";
+var pcs_raw_avail = false;
+var old_browser = false;
+try {
+  var pcs_raw = window.matchMedia('(prefers-color-scheme: dark)')
+  pcs_raw_avail = true
+}
+  catch (e) {
+    // empty
+  }
+
+
+try {
+  localStorage.setItem("ls-test", "ls-test")
+  localStorage.removeItem("ls-test")
+} catch (e) {
+  ls_avail = false;
+}
+
+// Ensure that local settings are init'd, otherwise select proper buttons for settings.
+// Also don't do the initting if the ls is unavail
+if (ls_avail == true) {
+  try {
+    // These pages fall outside the order of the DataManager, so for now if we can't get settings, then just mark LS avail as null.
+    if (localStorage.getItem("settings") == null) {
+      ls_avail = false
+    }
+
+    // Match settings via JSON.parse
+    var settings = JSON.parse(localStorage.getItem("settings"))
+    appearance = settings['appearance']
+  } catch (e) {
+    // empty
+  }
+}
+
+$(function () {
+  try {
+    if (appearance == "dark" || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', true);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', false);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light-faq.css"]').prop('disabled', true);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark-faq.css"]').prop('disabled', false);
+    } else if (appearance == "light" || (!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+      // empty
+    }
+
+  } catch (e) {
+    // empty
+  }
+
+  $("#switcherbutton").show();
+  // eslint-disable-next-line no-undef
+  initButton(appearance);
+  // eslint-disable-next-line no-undef
+  initLink();
+
+  $(".btn").focus(function() {
+    this.blur();
+  })
+
+  $(".btn").focusin(function() {
+    this.blur();
+  })
+
+  $(".btn").focusout(function() {
+    this.blur();
+  })
+
+  moment.locale(navigator.language)
+
+  var zone = moment.tz.guess(true);
+
+  // Localize when does EB liftoff
+  $("#faq-preptime").html(moment(1680933600000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1680933600000))
+  $("#faq-liftofftime").html(moment(1680944400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1680944400000))
+  $("#faq-returntime").html(moment(1681034400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1681034400000))
+
+  // Code to localize a bunch of times
+  // Localize 2021-2024 calendar times
+  $("#2023cal").html(moment("20230409", "YYYYMMDD").format("dddd, LL"))
+  $("#2024cal").html(moment("20240331", "YYYYMMDD").format("dddd, LL"))
+  $("#2025cal").html(moment("20250420", "YYYYMMDD").format("dddd, LL"))
+  $("#2026cal").html(moment("20260405", "YYYYMMDD").format("dddd, LL"))
+
+  // Localize 2023 liftoff times
+  $("#2023cal-prep").html(moment(1680933600000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1680933600000))
+  $("#2023cal-liftoff").html(moment(1680944400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1680944400000))
+  $("#2023cal-return").html(moment(1681034400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1681034400000))
+
+  // Localize 2024 liftoff times
+  $("#2024cal-prep").html(moment(1711778400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1711778400000))
+  $("#2024cal-liftoff").html(moment(1711789200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1711789200000))
+  $("#2024cal-return").html(moment(1711879200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1711879200000))
+
+  // Localize 2025 liftoff times
+  $("#2025cal-prep").html(moment(1745042400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1745042400000))
+  $("#2025cal-liftoff").html(moment(1745053200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1745053200000))
+  $("#2025cal-return").html(moment(1745143200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1745143200000))
+
+  // Localize 2026 liftoff times
+  $("#2026cal-prep").html(moment(1775282400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1775282400000))
+  $("#2026cal-liftoff").html(moment(1775293200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1775293200000))
+  $("#2026cal-return").html(moment(1775383200000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1775383200000))
+
+  // Localize OEBT times
+  $("#2022oebtcal").html(moment("20230416", "YYYYMMDD").format("dddd, LL"))
+  $("#2022oebt-prep").html(moment(1650693600000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1681538400000))
+  $("#2022oebt-liftoff").html(moment(1650704400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1681549200000))
+  $("#2022oebt-return").html(moment(1650794400000).format("dddd, LL [at] LT") + " " + moment.tz.zone(zone).abbr(1681639200000))
+
+  $("#currenttime").html(moment().format())
+  $("#windowsize").html(window.innerWidth + "x" + window.innerHeight)
+})
+
+if (pcs_raw_avail) {
+  pcs_raw.addListener(function() {
+    if (((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', true);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', false);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light-faq.css"]').prop('disabled', true);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark-faq.css"]').prop('disabled', false);
+    } else if ((!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', false);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', true);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/light-faq.css"]').prop('disabled', false);
+      $('link[rel="stylesheet"][href="/assets/stylesheets/dark-faq.css"]').prop('disabled', true);
+    }
+  })
+}
+
+// eslint-disable-next-line no-undef
+document.addEventListener("visibilitychange", vischange_button)
+// eslint-disable-next-line no-undef
+document.addEventListener("focus", vischange_button)
+window.onpageshow = function(event) {
+  if (event.persisted) {
+    // eslint-disable-next-line no-undef
+    vischange_button()
+  }
+}
+
+window.onresize = function() {
+  $("#windowsize").html(window.innerWidth + "x" + window.innerHeight)
+}
+
+function updateCurrTime() {
+  $("#currenttime").html(moment().format())
+}
+</script>
+
+<body class="top-card" id="mainbody">
+  <div class="preload" style="opacity: 0; width: 0px; height: 0px;">
+    <i class="material-icons">brightness_auto</i>
+    <i class="material-icons">brightness_4</i>
+    <i class="material-icons">brightness_5</i>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col" style="padding: 2em">
+      <button type="button" id="switcherbutton" class="btn top-card" onclick="styleSwitch()" style="float: right; display: none"><i id="appearance_button" class="material-icons" style="line-height: unset; bottom: 0.00rem;"></i></button>
+      <p class="lead">Easter Bunny Tracker - FAQs</p>
+      <p>Last updated: January 25, 2023</p>
+      <hr class="styledhr">
+      <a href="/">Return to the tracker</a>
+      <hr class="styledhr">
+      <p>Hi! You've got lots of questions about Easter, our Easter Bunny Tracker, the Easter Bunny, and we're got lots of answers!</p>
+      <hr class="styledhr">
+      <h3 class="h3pad">v6.0 FAQs</h3>
+      <div id="accordion-faq">
+        <div class="card">
+          <div class="card-header" id="newfaq-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#newfaq" aria-expanded="false" aria-controls="newfaq">
+                <i class="material-icons">new_releases</i>&nbsp; What's new in Version 6.0 of track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="newfaq" class="collapse" aria-labelledby="newfaq-header">
+            <div class="card-body maintext-override">
+              There's so much that's new! The tracker has been completely rewritten from the ground up for better long-term maintainability, features a brand new user interface with a slicker and more modern design. The Easter Bunny now stops at each stop while retaining our world-class stop accuracy. The settings modal has gotten lots of love and has been improved for a better experience. We've improved our stop accuracy even more this year, made the tracker even smoother by default, and continued to add more functionality.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="settingmigratefaq-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#settingmigratefaq" aria-expanded="false" aria-controls="settingmigratefaq">
+                <i class="material-icons">tune</i>&nbsp; Will my settings migrate from v5 to v6 of the tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="settingmigratefaq" class="collapse" aria-labelledby="settingmigratefaq-header">
+            <div class="card-body maintext-override">
+              Yes. Any settings you had previously set for v5 will be carried over to v6. If your default map zoom level was 12 or higher, it'll be reduced to 11 to account for the new stop arrival animations.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="v6compat-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#v6compat" aria-expanded="false" aria-controls="v6compat">
+                <i class="material-icons">web</i>&nbsp; Has browser compatibility changed with Version 6?
+              </button>
+            </h4>
+          </div>
+          <div id="v6compat" class="collapse" aria-labelledby="v6compat-header">
+            <div class="card-body maintext-override">
+              Nope! Even with all the changes we've made, the tracker remains compatible with all browsers that worked with Version 5. This includes Chrome 48 or higher, Firefox 52 or higher, and Safari 9 or higher. <br><br>
+              As a note, the best experience for TEBCC will be on modern browsers that are about a year old or newer (Safari 15+, Chrome 79+, Firefox 70ish+). If you're using an older brower, you may see some features not work as intended because we try to port newer functionalities we use to older browsers (but these backports aren't perfect). <br><br>
+              You'll also likely see slower performance on older devices, you can try to improve performance using the optimize settings for low performance defaults.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Easter Calendar FAQs</h3>
+      <div id="accordion-calendar">
+        <div class="card">
+          <div class="card-header" id="easter2023-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#easter2023" aria-expanded="false" aria-controls="easter2023">
+                <i class="material-icons">today</i>&nbsp; When is Easter 2023?
+              </button>
+            </h4>
+          </div>
+          <div id="easter2023" class="collapse" aria-labelledby="easter2023-header">
+            <div class="card-body maintext-override">
+              Easter 2023 occurs on <b><span id="2023cal">Sunday, April 9, 2023</span></b>. <br><br>
+              This means that the Easter Bunny will start making final preparations on <b><span id="2023cal-prep">Saturday, April 8, 2023 at 2:00 AM EDT</span></b>. These final preparations will take three hours. <br><br>
+              The Easter Bunny will lift off from Easter Island on <b><span id="2023cal-liftoff">Saturday, April 8, 2023 at 5:00 AM EDT</span></b>, and we will start tracking the Easter Bunny at this time. <br><br>
+              The Easter Bunny will return home to Easter Island on <b><span id="2023cal-return">Saturday, April 9, 2023 at 6:00 AM EDT</span></b>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="easter2024-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#easter2024" aria-expanded="false" aria-controls="easter2024">
+                <i class="material-icons">today</i>&nbsp; When is Easter 2024?
+              </button>
+            </h4>
+          </div>
+          <div id="easter2024" class="collapse" aria-labelledby="easter2024-header">
+            <div class="card-body maintext-override">
+              Easter 2024 occurs on <b><span id="2024cal">Sunday, March 31, 2024</span></b>. <br><br>
+              This means that the Easter Bunny will start making final preparations on <b><span id="2024cal-prep">Saturday, March 30, 2024 at 2:00 AM EDT</span></b>. These final preparations will take three hours. <br><br>
+              The Easter Bunny will lift off from Easter Island on <b><span id="2024cal-liftoff">Saturday, March 30, 2024 at 5:00 AM EDT</span></b>, and we will start tracking the Easter Bunny at this time. <br><br>
+              The Easter Bunny will return home to Easter Island on <b><span id="2024cal-return">Sunday, March 31, 2024 at 6:00 AM EDT</span></b>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="easter2025-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#easter2025" aria-expanded="false" aria-controls="easter2025">
+                <i class="material-icons">today</i>&nbsp; When is Easter 2025?
+              </button>
+            </h4>
+          </div>
+          <div id="easter2025" class="collapse" aria-labelledby="easter2025-header">
+            <div class="card-body maintext-override">
+              Easter 2025 occurs on <b><span id="2025cal">Sunday, April 20, 2025</span></b>. <br><br>
+              This means that the Easter Bunny will start making final preparations on <b><span id="2025cal-prep">Saturday, April 19, 2025 at 2:00 AM EDT</span></b>. These final preparations will take three hours. <br><br>
+              The Easter Bunny will lift off from Easter Island on <b><span id="2025cal-liftoff">Saturday, April 19, 2025 at 5:00 AM EDT</span></b>, and we will start tracking the Easter Bunny at this time. <br><br>
+              The Easter Bunny will return home to Easter Island on <b><span id="2025cal-return">Sunday, April 20, 2025 at 6:00 AM EDT</span></b>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="easter2026-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#easter2026" aria-expanded="false" aria-controls="easter2026">
+                <i class="material-icons">today</i>&nbsp; When is Easter 2026?
+              </button>
+            </h4>
+          </div>
+          <div id="easter2026" class="collapse" aria-labelledby="easter2026-header">
+            <div class="card-body maintext-override">
+              Easter 2026 occurs on <b><span id="2026cal">Sunday, April 5, 2026</span></b>. <br><br>
+              This means that the Easter Bunny will start making final preparations on <b><span id="2026cal-prep">Saturday, April 4, 2026 at 2:00 AM EDT</span></b>. These final preparations will take three hours. <br><br>
+              The Easter Bunny will lift off from Easter Island on <b><span id="2026cal-liftoff">Saturday, April 4, 2026 at 5:00 AM EDT</span></b>, and we will start tracking the Easter Bunny at this time. <br><br>
+              The Easter Bunny will return home to Easter Island on <b><span id="2026cal-return">Sunday, April 5, 2026 at 6:00 AM EDT</span></b>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Easter Bunny Tracker FAQs</h3>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="journeyInfo-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#journeyInfo" aria-expanded="false" aria-controls="journeyInfo">
+                <i class="material-icons">alarm</i>&nbsp; When does the Easter Bunny Tracker start in 2023?
+              </button>
+            </h4>
+          </div>
+          <div id="journeyInfo" class="collapse" aria-labelledby="journeyInfo-header">
+            <div class="card-body maintext-override">
+              <noscript>
+                <b>We couldn't determine your timezone because you have JavaScript disabled. <br>
+                For localized times, please enable JavaScript. <br><br></b>
+              </noscript>
+              For 2023, the Easter Bunny will start making final preparations on <b><span id="faq-preptime">April 8, 2023 at 2:00 AM EDT</span></b>, and we will start the tracker at this time. These final preparations will take three hours. 
+            <br><br>
+            The Easter Bunny will lift off from Easter Island on <b><span id="faq-liftofftime">April 8, 2023 at 5:00 AM EDT</span></b>, and we'll start tracking the Easter Bunny's movements at this time!
+            <br><br>
+            The Easter Bunny will return back home to Easter Island on <b><span id="faq-returntime">April 9, 2023 at 6:00 AM EDT</span></b>.
+            <br><br>
+            track.easterbunny.cc provides real-time updates on the Easter Bunny's whereabouts every second for the 25 hours that the Easter Bunny is making deliveries. The Easter Bunny starts making deliveries west of the international date line, slowly progressing west across the world until returning to Easter Island.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebVisit-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebVisit" aria-expanded="false" aria-controls="ebVisit">
+                <i class="material-icons">home</i>&nbsp; When will the Easter Bunny visit my house?
+              </button>
+            </h4>
+          </div>
+          <div id="ebVisit" class="collapse" aria-labelledby="ebVisit-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny will arrive at your home sometime between 9 PM and 2 AM local time. Make sure that you are asleep when the Easter Bunny comes, as if you are not, the Easter Bunny may not be able to deliver your baskets and eggs. <br><br>
+              You can keep tabs on when the Easter Bunny is estimated to arrive in the next stop box. If there is no arrival estimate, check the tracker settings to make sure the arrival estimate time is on. If it's on and there's still no text in the next stop box, this means the Easter Bunny has arrived in your area.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebPrep-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebPrep" aria-expanded="false" aria-controls="ebPrep">
+                <i class="material-icons">list</i>&nbsp; What are the Easter Bunny's final preparations?
+              </button>
+            </h4>
+          </div>
+          <div id="ebPrep" class="collapse" aria-labelledby="ebPrep-header">
+            <div class="card-body maintext-override">
+              Since 2019, track.easterbunny.cc has exclusively partnered with the Easter Bunny's helpers to provide an insider look at the Easter Bunny's final preparations for 3 hours before liftoff. During final preparations (also known as pre-tracking), you'll get updates every 2.5 minutes straight from Easter Island on how the Easter Bunny is preparing for liftoff. <br><br>
+              Once final preparations are complete and the Easter Bunny lifts off, the tracker will transition from final preparation mode into tracking mode.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebLF-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebLF" aria-expanded="false" aria-controls="ebLF">
+                <i class="material-icons">list</i>&nbsp; What's the first and last place the Easter Bunny visits?
+              </button>
+            </h4>
+          </div>
+          <div id="ebLF" class="collapse" aria-labelledby="ebLF-header">
+            <div class="card-body maintext-override">
+              In 2022, the Easter Bunny visited the islands of Kiribati and Tuvalu first, approximately 5-15 minutes after departure. <br><br>
+              About 25 hours later, the Easter Bunny visited the islands of French Polynesia and the Pitcairn Islands before returning home to Easter Island. <br><br>
+              Every year, the Easter Bunny usually follows this pattern for the first & last stop, but the specific stops may be different from year to year.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebTracking-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebTracking" aria-expanded="false" aria-controls="ebTracking">
+                <i class="material-icons">track_changes</i>&nbsp; How are you tracking the Easter Bunny?
+              </button>
+            </h4>
+          </div>
+          <div id="ebTracking" class="collapse" aria-labelledby="ebTracking-header">
+            <div class="card-body maintext-override">
+              We use real-time satellite imagery, alongside traditional radar tracking and other modern technologies that allows us to track the Easter Bunny with extremely high accuracy. This allows us to bring you updates on the Easter Bunny's whereabouts every second! <br><br>
+              We've continued to upgrade the technology we use so that our tracker can show more of the stops the Easter Bunny makes. For instance, in 2019, we detected about 400 stops, whereas in 2020 we detected about 600 stops. We expect to detect approximately 900-1000 stops in 2023 as we continue to upgrade our technology. <br><br>
+              We continue to be the most accurate Easter Bunny Tracker on the planet with our highly advanced technology.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebRefresh-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebRefresh" aria-expanded="false" aria-controls="ebRefresh">
+                <i class="material-icons">autorenew</i>&nbsp; Do I need to refresh the tracker to get the latest location of the Easter Bunny?
+              </button>
+            </h4>
+          </div>
+          <div id="ebRefresh" class="collapse" aria-labelledby="ebRefresh-header">
+            <div class="card-body maintext-override">
+              Nope! Since our inception we've had automatic updates just like the Google trackers. There's no need to set up any auto-refreshers.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="mapSquares-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#mapSquares" aria-expanded="false" aria-controls="mapSquares">
+                <i class="material-icons">map</i>&nbsp; Why are there grey squares on the map? It's annoying!
+              </button>
+            </h4>
+          </div>
+          <div id="mapSquares" class="collapse" aria-labelledby="mapSquares-header">
+            <div class="card-body maintext-override">
+              This is a known issue with the Google Maps that we use when the page is zoomed in at higher than 100% zoom level (or your display is at a scale of 100% or higher). This issue only affects Chrome and browsers based on the Blink engine (the one Chrome uses). <br><br>
+              We have a setting in the Map tab of settings where you can enable a setting to try and fix these lines. You'll see this come up if we detect you're using a browser effected by this. <br><br>
+              We're also aware that Firefox on Desktop has a slight issue where the map "warps" when the Easter Bunny moves when the page is zoomed in.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebLag-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebLag" aria-expanded="false" aria-controls="ebLag">
+                <i class="material-icons">slow_motion_video</i>&nbsp; The tracker is laggy on my device! What's going on?
+              </button>
+            </h4>
+          </div>
+          <div id="ebLag" class="collapse" aria-labelledby="ebLag-header">
+            <div class="card-body maintext-override">
+              As we continue to build new features into the tracker, using older devices with the tracker will usually result in some lag and generally be slower. If this is the case on your device, we recommend enabling the low performance mode default settings, which will try to lower the impact of the tracker CPU usage as much as possible. <br><br>
+              Generally speaking, you should be able to use the tracker on any modern phone from 2017/2018 onward or a modern laptop from 2012-2013 onward without too much lag. <br><br>
+              If going into low-performance settings doesn't do the trick, you can always search "easter bunny tracker live stream" on YouTube, and you'll usually find plenty of people streaming track.easterbunny.cc.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebForgot-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebForgot" aria-expanded="false" aria-controls="ebForgot">
+                <i class="material-icons">location_city</i>&nbsp; The Easter Bunny forgot to visit my city! What happened?
+              </button>
+            </h4>
+          </div>
+          <div id="ebForgot" class="collapse" aria-labelledby="ebForgot-header">
+            <div class="card-body maintext-override">
+              When the Easter Bunny is travelling between two major cities, the Easter Bunny makes numerous stops in smaller towns & cities. Unfortunately, it's impossible to depict the Easter Bunny visiting every city on Earth.<br><br>
+              If there are basket icons in your area, this means the Easter Bunny has likely visited your home.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebLearn-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebLearn" aria-expanded="false" aria-controls="ebLearn">
+                <i class="material-icons">read_more</i>&nbsp; How can I learn more about the cities the Easter Bunny stops in?
+              </button>
+            </h4>
+          </div>
+          <div id="ebLearn" class="collapse" aria-labelledby="ebLearn-header">
+            <div class="card-body maintext-override">
+              After the Easter Bunny visits a city, you can click on the basket icon for more information about that city. You'll see the country flag, population, elevation, weather on arrival, and when the Easter Bunny arrived in the city. <br><br>
+              You'll also see a quick exercept of the city from the corresponding Wikipedia article, with a source link to read more about the city. <br><br>
+              We also include navigation arrows in the top of the popup window, so you can explore the Easter Bunny's route with ease. When the map is uncentered on the Easter Bunny (or when tracking is done), clicking on these navigation arrows will pan the map to the stop you're looking at.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebWeather-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebWeather" aria-expanded="false" aria-controls="ebWeather">
+                <i class="material-icons">cloud</i>&nbsp; Why isn't the weather in the stop information updating?
+              </button>
+            </h4>
+          </div>
+          <div id="ebWeather" class="collapse" aria-labelledby="ebWeather-header">
+            <div class="card-body maintext-override">
+              The weather information that you see when learning more about a stop is accurate for when the Easter Bunny arrived at the stop. It doesn't automatically update unfortunately. <br><br>
+              We couldn't fit "Weather on arrival" in the pop-up window, so we had to abbreviate it to "Weather".
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebBounce-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebBounce" aria-expanded="false" aria-controls="ebBounce">
+                <i class="material-icons">location_on</i>&nbsp; Can I make the Easter Bunny bounce in the tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="ebBounce" class="collapse" aria-labelledby="ebBounce-header">
+            <div class="card-body maintext-override">
+              Yes you can! In the Map Settings section of tracker preferences, there is an option to enable the Easter Bunny bouncing effect. When turned on, the effect will be visible while the Easter Bunny is moving during tracking. <br><br>
+              <b>Note: </b>Enabling this option will consume more CPU power, in turn potentially reducing battery life on laptops & phones.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccSmooth-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccSmooth" aria-expanded="false" aria-controls="tebccSmooth">
+                <i class="material-icons">update</i>&nbsp; Can I make the tracker update more frequently?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccSmooth" class="collapse" aria-labelledby="tebccSmooth-header">
+            <div class="card-body maintext-override">
+              Yes you can! You can customize how often the tracker updates. By default, the tracker updates the Easter Bunny marker at a rate of 5 FPS (frames/updates per second), and metrics at 10 FPS for v6.0. <br><br>
+              You can customize the smoothness in 5 different levels. The update intervals for these settings are listed below:
+              <ul>
+                <li>Slowest: Marker at 1 FPS, Metrics at 5 FPS (default prior to v5.6)</li>
+                <li>Slower: Marker at 2 FPS, Metrics at 10 FPs</li>
+                <li>Default: Marker at 5 FPS, Metrics at 10 FPS</li>
+                <li>Smoother: Marker at 10 FPS, Metrics at 10 FPS</li>
+                <li>Smoothest: Marker at 20 FPS, Metrics at 20 FPS</li>
+              </ul>
+              Keep in mind a few additional notes:
+              <ul>
+                <li>Increased smoothness will increase your CPU usage, and on mobile devices, decrease battery life. CPU usage increases relatively linearly as you increase your smoothness settings.</li>
+                <li>The distance from you metric is locked to the update rate of the marker.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="fullscreen-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#fullscreen" aria-expanded="false" aria-controls="fullscreen">
+                <i class="material-icons">fullscreen</i>&nbsp; Can I make the tracker fullscreen?
+              </button>
+            </h4>
+          </div>
+          <div id="fullscreen" class="collapse" aria-labelledby="fullscreen-header">
+            <div class="card-body maintext-override">
+              Yes you can! There's three different ways you can make the tracker fullscreen. <br><br>
+              The first way is by using the fullscreen button that's built into the tracker that's new in v6. You can find it at the bottom left of the screen with the same icon for this FAQ. Once you click it, the tracker will be in fullscreen! Then, you can click the button again whenever you wish to exit fullscreen. <br><br>
+              Please note that the fullscreen button isn't available on all browsers, namely Safari support is missing. We're hoping to expand support for this feature to additional browsers soon. <br><br>
+              The second way is by installing the tracker as an app on your homescreen. This process depends on your browser but usually you want to find something like "Add to homescreen". On Safari you can find this by tapping the share sheet, on Chrome you can find this by clicking the three dots in the top right. <br><br>
+              The third and final way is by using your browser's native fullscreen capabilities. How you enter fullscreen will depend on your specific browser. This may result in tabs being visible in fullscreen so that's why we recommend you use our fullscreen button whenever possible.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebArrival-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebArrival" aria-expanded="false" aria-controls="ebArrival">
+                <i class="material-icons">near_me</i>&nbsp; How accurate is the Easter Bunny arrival time estimate & distance from you metric?
+              </button>
+            </h4>
+          </div>
+          <div id="ebArrival" class="collapse" aria-labelledby="ebArrival-header">
+            <div class="card-body maintext-override">
+              As with anything complicated, it depends! <br><br>
+              By default, the arrival estimate is accurate to within about 15 minutes of the Easter Bunny's arrival time, and the distance from you metric is accurate to about ~100 km/mi from your location. We use your IP address as an imprecise location estimate to give you an idea of when the Easter Bunny will arrive and far away the Easter Bunny is. But because it's IP based, you'll likely experience slightly inaccurate results in mobile data, and VPNs will produce inaccurate results. <br><br>
+              Beginning in Version 6.1, you can opt for the tracker to query your actual location to enhance the accuracy of the arrival time and distance from you metric. When you do this, the arrival time estimate will go down to the stop, and the distance from you metric will be visible at all times (with much finer accuracy compared to your approximate location). Enabling this bypasses any inaccuracies you may get from your estimated location if you're using a VPN or mobile data. You can enable this precision location by clicking the settings button, going to the localization tab, then clicking "Precise" under Your location accuracy.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebWhereabouts-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebWhereabouts" aria-expanded="false" aria-controls="ebWhereabouts">
+                <i class="material-icons">share</i>&nbsp; Are the Easter Bunny's whereabouts posted on social media?
+              </button>
+            </h4>
+          </div>
+          <div id="ebWhereabouts" class="collapse" aria-labelledby="ebWhereabouts-header">
+            <div class="card-body maintext-override">
+              Whenever the Easter Bunny reaches a new stop, we will post updates to the <a href="https://twitter.com/bunny_updates" target="_blank" rel="noopener">@bunny_updates</a> Twitter automatically, and general updates every 15-30 minutes to the <a href="https://twitter.com/bunny_tracking" target="_blank" rel="noopener">@bunny_tracking</a> Twitter. We have no plans to create a Facebook page at this time.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebCenter-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebCenter" aria-expanded="false" aria-controls="ebCenter">
+                <i class="material-icons">explore</i>&nbsp; I want to explore the map, but it keeps recentering on the Easter Bunny! Why is this?
+              </button>
+            </h4>
+          </div>
+          <div id="ebCenter" class="collapse" aria-labelledby="ebCenter-header">
+            <div class="card-body maintext-override">
+              During tracking, we center the map on the Easter Bunny, which means you can't explore the map. You can uncenter the map by using the top icon in the icon stack in the bottom left of the tracker window. You can recenter the map on the Easter Bunny by clicking on the same icon again. <br><br>
+              This icon won't appear during final preparations (the map is locked in place for final preparations), and when tracking is complete (the map is automatically uncentered once tracking is done).
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebSettings-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebSettings" aria-expanded="false" aria-controls="ebSettings">
+                <i class="material-icons">settings</i>&nbsp; Why are my settings not saving after I close and reopen my web browser?
+              </button>
+            </h4>
+          </div>
+          <div id="ebSettings" class="collapse" aria-labelledby="ebSettings-header">
+            <div class="card-body maintext-override">
+              Check the settings window to see if there's a warning about the tracker being unable to save your settings. If this is the case, you need to enable site storage in your browser settings so that the tracker can save your settings!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebApp-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebApp" aria-expanded="false" aria-controls="ebApp">
+                <i class="material-icons">apps</i>&nbsp; Is there an iOS/Android app for track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="ebApp" class="collapse" aria-labelledby="ebApp-header">
+            <div class="card-body maintext-override">
+              Not at this time. We are focused on developing track.easterbunny.cc as a great web app first and foremost so we can reach as many devices as possible. However, on both iOS and Android, you can add the tracker to your homescreen so it behaves like an app. <br><br>
+              On iOS - click the Share button in Safari, then scroll down and click Add to Home Screen. The tracker will then get added to your homescreen and launch as a fullscreen app! <br><br>
+              On Android (at least in Chrome) - click the three dots in the top right, then click Install. The tracker will install itself as an app on your homescreen. <br><br>
+              When you add the tracker to your homescreen, your settings won't carry over from your browser and will start from fresh. Also note that the tracker is not a PWA (progressive web app), although we're looking to introduce support for this in v7 of the tracker.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebStay-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebStay" aria-expanded="false" aria-controls="ebStay">
+                <i class="material-icons">toggle_on</i>&nbsp; How long will the Easter Bunny Tracker stay up after tracking is complete?
+              </button>
+            </h4>
+          </div>
+          <div id="ebStay" class="collapse" aria-labelledby="ebStay-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny Tracker will remain online until April 23, 2023 so that you can explore all the different places the Easter Bunny visited!
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Easter Bunny FAQs</h3>
+      <div id="accordion-eb">
+        <div class="card">
+          <div class="card-header" id="ebCOVID-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebCOVID" aria-expanded="false" aria-controls="ebCOVID">
+                <i class="material-icons">coronavirus</i>&nbsp; Is the Easter Bunny making deliveries during the coronavirus (COVID-19) pandemic?
+              </button>
+            </h4>
+          </div>
+          <div id="ebCOVID" class="collapse" aria-labelledby="ebCOVID-header">
+            <div class="card-body maintext-override">
+              Yes - the Easter Bunny will make deliveries during the ongoing coronavirus pandemic. <br><br>
+              The Easter Bunny is vaccinated (and boosted!), but nonetheless will continue to take safety seriously. The Easter Bunny will wear a mask during deliveries, wash their hands frequently, and stay socially distanced whenever possible.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebLives-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebLives" aria-expanded="false" aria-controls="ebLives">
+                <i class="material-icons">home</i>&nbsp; Where does the Easter Bunny live?
+              </button>
+            </h4>
+          </div>
+          <div id="ebLives" class="collapse" aria-labelledby="ebLives-header">
+            <div class="card-body maintext-override">
+              Although we don't know the precise location of where the Easter Bunny lives, we presume that the Easter Bunny lives somewhere on Easter Island, and that's depicted in the tracker.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebHelpers-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebHelpers" aria-expanded="false" aria-controls="ebHelpers">
+                <i class="material-icons">people</i>&nbsp; Does the Easter Bunny have helpers?
+              </button>
+            </h4>
+          </div>
+          <div id="ebHelpers" class="collapse" aria-labelledby="ebHelpers-header">
+            <div class="card-body maintext-override">
+              Similar to Santa Claus, we believe the Easter Bunny has helpers to decorate eggs, make baskets, and prepare the Easter Bunny for the big journey. Sometimes, these helpers are referred to as the "Easter Chicks".
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebTravel-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebTravel" aria-expanded="false" aria-controls="ebTravel">
+                <i class="material-icons">public</i>&nbsp; How does the Easter Bunny travel around the world in a day?
+              </button>
+            </h4>
+          </div>
+          <div id="ebTravel" class="collapse" aria-labelledby="ebTravel-header">
+            <div class="card-body maintext-override">
+              We aren't sure how the Easter Bunny can travel around the world in a very short period of time. Similar to how Santa does it, modern science cannot explain how the Easter Bunny does it.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebEI-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebEI" aria-expanded="false" aria-controls="ebEI">
+                <i class="material-icons">local_shipping</i>&nbsp; Does the Easter Bunny deliver baskets and eggs to those on Easter Island?
+              </button>
+            </h4>
+          </div>
+          <div id="ebEI" class="collapse" aria-labelledby="ebEI-header">
+            <div class="card-body maintext-override">
+              Yes. The Easter Bunny's helpers deliver the baskets and eggs to residents of Easter Island between 9 PM and 12 AM local time. <br><br>
+              If you are using the tracker on Easter Island (kudos to you if you are!), the arrival estimate will likely be inaccurate.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebCatch-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebCatch" aria-expanded="false" aria-controls="ebCatch">
+                <i class="material-icons">search</i>&nbsp; How can I catch the Easter Bunny?
+              </button>
+            </h4>
+          </div>
+          <div id="ebCatch" class="collapse" aria-labelledby="ebCatch-header">
+            <div class="card-body maintext-override">
+              We recommend that you don't try to catch the Easter Bunny! Similar to Santa Claus, trying to catch the Easter Bunny might mean the Easter Bunny won't deliver baskets and eggs!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebLeaveOut-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebLeaveOut" aria-expanded="false" aria-controls="ebLeaveOut">
+                <i class="material-icons">free_breakfast</i>&nbsp; Should I leave anything out for the Easter Bunny?
+              </button>
+            </h4>
+          </div>
+          <div id="ebLeaveOut" class="collapse" aria-labelledby="ebLeaveOut-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny doesn't require that you leave anything out to deliver your baskets & eggs. However, the Easter Bunny does enjoy eating carrots along the way, so that the Easter Bunny has the energy to stay on schedule!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebBaskets-header">
+            <h4 class="mb-0">
+              <!-- Use custom basket icon -->
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebBaskets" aria-expanded="false" aria-controls="ebBaskets">
+                <i class="basket-icon" style="bottom: -0.27rem;"></i>&nbsp; How many baskets does the Easter Bunny deliver?
+              </button>
+            </h4>
+          </div>
+          <div id="ebBaskets" class="collapse" aria-labelledby="ebBaskets-header">
+            <div class="card-body maintext-override">
+              During Easter 2022, we reported that the Easter Bunny delivered about 5.674 billion baskets to children all around the world. For Easter 2023, we expect this number to increase in correlation with Earth's increasing population. You can keep tabs of how many baskets the Easter Bunny delivers in real-time with our Easter Bunny Tracker.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebCarrots-header">
+            <h4 class="mb-0">
+              <!-- Use custom carrot icon -->
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebCarrots" aria-expanded="false" aria-controls="ebCarrots">
+                <i class="carrot-icon" style="bottom: -0.27rem;"></i>&nbsp; How many carrots does the Easter Bunny eat while delivering baskets?
+              </button>
+            </h4>
+          </div>
+          <div id="ebCarrots" class="collapse" aria-labelledby="mapSquares-header">
+            <div class="card-body maintext-override">
+              During Easter 2022, we reported that the Easter Bunny eat about 47 million carrots during the journey, all so the Easter Bunny has the needed energy to deliver so many baskets to children around the world. We expect this number to increase for Easter 2023 as the Easter Bunny is also expected to deliver even more baskets! You can keep tabs of how many carrots the Easter Bunny eats in real-time with our Easter Bunny Tracker. 
+              <br><br>
+              Make sure you click the right & left arrow icons in the metrics box (right side of the screen when 2 or 3 boxes are visible) to scroll to the Carrots Eaten metric. If you're on mobile, click the settings button in the bottom left corner, click the Metrics tab, and you'll be able to switch the metrics to Carrots Eaten there.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebDistance-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebDistance" aria-expanded="false" aria-controls="ebDistance">
+                <i class="material-icons">square_foot</i>&nbsp; How much distance does the Easter Bunny cover doing deliveries around the world?
+              </button>
+            </h4>
+          </div>
+          <div id="ebDistance" class="collapse" aria-labelledby="ebDistance-header">
+            <div class="card-body maintext-override">
+              During Easter 2022, we reported that the Easter Bunny travelled 470,000 km (262,000 mi) during the journey - which is the distance from the Earth to the Moon! What a well travelled Easter Bunny. As we increase our stop accuracy for 2023, we expect this number to also increase. You can keep tabs on how much distance the Easter Bunny has covered in real-time with our Easter Bunny Tracker.
+              <br><br>
+              Make sure you click the right & left arrow icons in the metrics box (right side of the screen when 2 or 3 boxes are visible) to scroll to the Distance travelled metric. If you're on mobile, click the settings button in the bottom left corner, click the Metrics tab, and you'll be able to switch the metrics to Distance travelled there.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebSpeed-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebSpeed" aria-expanded="false" aria-controls="ebSpeed">
+                <i class="material-icons">speed</i>&nbsp; How fast does the Easter Bunny travel?
+              </button>
+            </h4>
+          </div>
+          <div id="ebSpeed" class="collapse" aria-labelledby="ebSpeed-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny can travel anywhere from 750 mph (1200 km/h) in dense urban areas, to over 40,000 mph (64,000 km/h) when crossing oceans & lightly populated areas! You can keep tabs on the current speed of the Easter Bunny in real-time with our Easter Bunny Tracker.
+              <br><br>
+              Make sure you click the right & left arrow icons in the metrics box (right side of the screen when 2 or 3 boxes are visible) to scroll to the Speed metric. If you're on mobile, click the settings button in the bottom left corner, click the Metrics tab, and you'll be able to switch the metrics to Speed there.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebDFY-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebDFY" aria-expanded="false" aria-controls="ebDFY">
+                <i class="material-icons">straighten</i>&nbsp; How can I tell how far the Easter Bunny is from me?
+              </button>
+            </h4>
+          </div>
+          <div id="ebDFY" class="collapse" aria-labelledby="ebDFY-header">
+            <div class="card-body maintext-override">
+              It's super easy with the help of our Easter Bunny Tracker - no guess work required. Our tracker provides a distance from you metric so you can easily see how far the Easter Bunny is from you. Make sure you click the right & left arrow icons in the metrics box (right side of the screen when 2 or 3 boxes are visible) to scroll to the Distance from you metric. If you're on mobile, click the settings button in the bottom left corner, click the Metrics tab, and you'll be able to switch the metrics to Distance from you there. <br><br>
+              While you're in settings, consider visiting the Localization tab and switching your location accuracy to Precise. Doing so will enhance accuracy for the Distance from you metric and make it update more frequently!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebSleep-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebSleep" aria-expanded="false" aria-controls="ebSleep">
+                <i class="material-icons">bedtime</i>&nbsp; Does the Easter Bunny get sleep during the Easter Weekend?
+              </button>
+            </h4>
+          </div>
+          <div id="ebSleep" class="collapse" aria-labelledby="ebSleep-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny doesn't get any sleep during the Easter Weekend, as the Easter Bunny is up delivering baskets & eggs to children around the world. <br><br>
+              However, the Easter Bunny does get a well deserved rest once the Easter Bunny's journey is done, and gets lots of rest throughout the rest of the year.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebAsleep-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebAsleep" aria-expanded="false" aria-controls="ebAsleep">
+                <i class="material-icons">hotel</i>&nbsp; Do I have to be asleep for the Easter Bunny to come?
+              </button>
+            </h4>
+          </div>
+          <div id="ebAsleep" class="collapse" aria-labelledby="ebAsleep-header">
+            <div class="card-body maintext-override">
+              Not necessarily. The Easter Bunny will deliver baskets & eggs if you are not trying to catch the Easter Bunny but you're awake. <br><br>
+              We still recommend going to sleep about an hour or two before the Easter Bunny arrives so you get enough rest for Easter morning!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebAway-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebAway" aria-expanded="false" aria-controls="ebAway">
+                <i class="material-icons">gps_fixed</i>&nbsp; Will the Easter Bunny know where I am if I'm not home?
+              </button>
+            </h4>
+          </div>
+          <div id="ebAway" class="collapse" aria-labelledby="ebAway-header">
+            <div class="card-body maintext-override">
+              Don't worry - the Easter Bunny makes sure that all deliveries are accounted for. The Easter Bunny will be sure to deliver goodies to you, even when you're not at home.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="ebAge-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#ebAge" aria-expanded="false" aria-controls="ebAge">
+                <i class="material-icons">cake</i>&nbsp; How old is the Easter Bunny?
+              </button>
+            </h4>
+          </div>
+          <div id="ebAge" class="collapse" aria-labelledby="ebAge-header">
+            <div class="card-body maintext-override">
+              The Easter Bunny is estimated to be between 400 and 500 years old according to scientists. The Easter Bunny was born sometime in the 1500s/1600s, as stories about the Easter Bunny began to surface in the late 1600s.
+            </div>
+          </div>
+        </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">track.easterbunny.cc FAQs</h3>
+      <div id="accordion-tebcc">
+        <div class="card">
+          <div class="card-header" id="tebccAcknowledgements-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccAcknowledgements" aria-expanded="false" aria-controls="tebccAcknowledgements">
+                <i class="material-icons">sticky_note_2</i>&nbsp; Where can acknowledgements for track.easterbunny.cc be found?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccAcknowledgements" class="collapse" aria-labelledby="tebccAcknowledgements-header">
+            <div class="card-body maintext-override">
+              Beginning with v5.5.1, we condensed the info page so that acknowledgements, the license, and source links can be found in the FAQs. <br><br>
+              Acknowledgements can be found by clicking <a href="/acknowledgements/">here</a>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccLicense-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccLicense" aria-expanded="false" aria-controls="tebccLicense">
+                <i class="material-icons">policy</i>&nbsp; Where can the license for track.easterbunny.cc be found?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccLicense" class="collapse" aria-labelledby="tebccLicense-header">
+            <div class="card-body maintext-override">
+              Beginning with v5.5.1, we condensed the info page so that acknowledgements, the license, and source links can be found in the FAQs. <br><br>
+              track.easterbunny.cc is licensed under the GNU AGPL v3.0 license. While you don't have to comply with the entire license to use the tracker, you agree that the tracker is provided as-is with no warranty, and that we can't be held liable for damages from using our tracker. <br><br>
+              The full license text can be found by clicking <a href="/license/">here</a>.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccFont-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccFont" aria-expanded="false" aria-controls="tebccFont">
+                <i class="material-icons">font_download</i>&nbsp; The font looks weird on track.easterbunny.cc, why is this?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccFont" class="collapse" aria-labelledby="tebccFont-header">
+            <div class="card-body maintext-override">
+              track.easterbunny.cc uses the Google Fonts API to load in fonts. If your browser or network blocks fonts.googleapis.com, make sure this domain is unblocked. If you have a DNS blocker (such as Pi-hole), make sure this is also unblocked. <br><br>
+              The fonts on the website might look slightly off due to your machine having the Roboto font installed. This is a known issue, and we're working to get this fixed.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccLang-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccLang" aria-expanded="false" aria-controls="tebccLang">
+                <i class="material-icons">language</i>&nbsp; Is track.easterbunny.cc available in a language other than English?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccLang" class="collapse" aria-labelledby="tebccLang-header">
+            <div class="card-body maintext-override">
+              Unfortunately, track.easterbunny.cc is only available in English. We don't have any plans to natively translate the tracker into other languages at this time. <br><br>
+              If you can't use the tracker in English, we recommend using a browser that has translation functionalities built in (such as Google Chrome and Safari 14 or higher). Keep in mind that your tracking experience may be degraded by using automatic translating.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccGames-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccGames" aria-expanded="false" aria-controls="tebccGames">
+                <i class="material-icons">games</i>&nbsp; Why are there no games on track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccGames" class="collapse" aria-labelledby="tebccGames-header">
+            <div class="card-body maintext-override">
+              track.easterbunny.cc is all about the tracking experience first and foremost. We're focused on building the best Easter Bunny Tracker we can, and that comes at the cost of having no games or other fun content surrounding the website. <br><br>
+              Building games into track.easterbunny.cc would take time away from development, leading to a worse quality tracker. We recommend that you visit other websites for Easter-related games, then come back to track.easterbunny.cc to track the Easter Bunny!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccStream-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccStream" aria-expanded="false" aria-controls="tebccStream">
+                <i class="material-icons">tv</i>&nbsp; Can I stream track.easterbunny.cc to YouTube, Twitch, etc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccStream" class="collapse" aria-labelledby="tebccStream-header">
+            <div class="card-body maintext-override">
+              You can stream track.easterbunny.cc to any streaming service you wish, and post videos about track.easterbunny.cc. You can monetize your live streams if you so desire. <br><br>
+              We no longer require that you attribute the tracker link, as we did in 2019 for the first run. However, we still recommend that you put the link to track.easterbunny.cc in your stream description, as we continue to be discovered as an alternative Easter Bunny Tracker. <br><br>
+              If you are streaming the tracker online, we have a set of optimal livestreaming settings that we think provide the best experience for others to view track.easterbunny.cc online. You can find these settings under the Reset Settings section of tracker preferences. <br><br>
+              If you're streaming the tracker via an OBS browser window, we recommend clearing out the custom CSS that OBS automatically puts in a browser window. You can do this by right clicking the Browser Source, going to properties, and clearing the field. <br><br>
+              You can also set the zoom level of the tracker via OBS Custom CSS, using this code: <br><br>
+              <code>body {zoom: 125%}</code><br><br>
+              You can replace the 125% zoom level with a zoom level you think works best for your stream.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccIcon-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccIcon" aria-expanded="false" aria-controls="tebccIcon">
+                <i class="material-icons">get_app</i>&nbsp; Do you have icons that I can use for thumbnails, stream trailers, etc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccIcon" class="collapse" aria-labelledby="tebccIcon-header">
+            <div class="card-body maintext-override">
+              Yes! We now have a new icon assets page where you can download the icons for the track.easterbunny.cc logo in a variety of sizes. <br><br>
+              You can find the new icon assets page here: <a href="https://track.easterbunny.cc/iconassets">https://track.easterbunny.cc/iconassets</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccOSS-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccOSS" aria-expanded="false" aria-controls="tebccOSS">
+                <i class="material-icons">code</i>&nbsp; Is track.easterbunny.cc open source?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccOSS" class="collapse" aria-labelledby="tebccOSS-header">
+            <div class="card-body maintext-override">
+              Yes - track.easterbunny.cc is open source. We released our source code so that a larger community of people could inspect, improve, and work on the tracker code. <br><br>
+              Please note that the tracker code online is based on Version 5.5.1 for the 2021 run and is a very hard codebase to understand. We will be releasing the Version 6.0 codebase in April 2023. <br><br>
+              You can find the tracker's source code on GitLab: <a href="https://gitlab.com/track-easterbunny-cc/tebcc" target="_blank" rel="noopener">https://gitlab.com/track-easterbunny-cc/tebcc</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccOSS-modify-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccOSS-modify" aria-expanded="false" aria-controls="tebccOSS-modify">
+                <i class="material-icons">content_copy</i>&nbsp; Can I use track.easterbunny.cc's source code, modify it, and make my own tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccOSS-modify" class="collapse" aria-labelledby="tebccOSS-modify-header">
+            <div class="card-body maintext-override">
+              <b>Note: With Version 6.0 we will move to a less strict GPL license. Information about this change will be announced when v6.0 is released.</b> <br><br>
+              Yes, but with one big caveat. track.easterbunny.cc is licensed under the GNU AGPL v3.0 license, which requires you to pay your changes forward. If you use our source code, modify it, then release your tracker to the public, you are legally required to make your modified source code available (on GitLab, GitHub, etc) under the GNU AGPL v3.0 license, and document changes made. <br><br>
+              The same principle applies if you incorporate the tracker code under a larger system, in that you are required to release the source code for that larger system (exceptions are made for integrating the tracker into a CMS system such as WordPress, Drupal, etc) under GNU AGPL v3.0. If you're confused about if you need to release your larger system's source code, get in touch with us and we can work things out. <br><br>
+              We do not give paid exceptions to anyone regarding not releasing modified source code.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccHistory-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccHistory" aria-expanded="false" aria-controls="tebccHistory">
+                <i class="material-icons">history</i>&nbsp; What's the story behind track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccHistory" class="collapse" aria-labelledby="tebccHistory-header">
+            <div class="card-body maintext-override">
+              track.easterbunny.cc launched in 2019 with a mission to revolutionize Easter Bunny Tracking. We believed the world deserved better when it came to Easter Bunny Tracking - and wanted to make an Easter Bunny Tracker similar in quality to NORAD & Google's Santa Trackers. <br><br>
+              Before 2019, Easter Bunny Tracking was limited to one or two websites that constantly crashed, didn't have live updates, required refreshing to get the latest updates, no moving maps, and seemed to focus more about the experience around Easter Bunny Tracking rather than the tracker itself. <br><br>
+              In 2019, we revolutionized Easter Bunny Tracking with track.easterbunny.cc Version 3. For the first time in history, anyone could track the Easter Bunny in real-time, with a moving map, and pre-tracking. We focused heavily on building the logic for a real-time Easter Bunny Tracker, which meant the tracker design was quite barebones (which many of our users pointed out!). Nonetheless, we showed off what was possible with the future of Easter Bunny Tracking. We even got a nice amount of traffic - about 4,000 hits over 28 hours of tracking. <br><br>
+              In 2020, we built on the foundation from Version 3, and revolutionized Easter Bunny Tracking again with track.easterbunny.cc Version 4. With a brand new material design, tracker customization that had never been seen before, estimated arrival times for the Easter Bunny, built-in information about the Easter Bunny's stops, enhanced mobile usability, and tons of new features, the future of Easter Bunny Tracking came to life. All these improvements mean we grew by a whopping 850% compared to 2019's run of track.easterbunny.cc, with a total of 35,000 hits and 14,000 unique visitors from around the world. <br><br>
+              For 2021, we focused on making a more refined, customizable, and better tracker with track.easterbunny.cc Version 5. With new features such as metric customization, metrics on mobile devices, more accurate Easter Bunny arrival estimates, better stop detection, map customization, better localization, these small changes meant that we grew by nearly 300% to post 102,000 hits during the course of tracking.<br><br>
+              While 2022 was the year we rested on our laurels, we still made some improvements to the tracker - like flags in last seen/next stop, smooth movement, and other minor improvements. But so did the other trackers, and for the fourth year running, we continued to provide a world-class tracking experience. This meant the tracker posted 127,000 hits, a growth of 124% from the year before. <br><br>
+              For 2023, we've focused on rebuilding the entire tracker from the ground up, preparing us for the future of the tracker. This includes a brand new user interface with a modern design, new features to the core of tracking such as stop arrivals, fullscreen support, better user localization features, and of course lots of little tweaks to make the Easter Bunny tracking experience even better than the year before. <br><br>
+              Although we may not be the first nor the biggest Easter Bunny Tracker (and we're quite content with that!), our mission is to provide one of the best Easter Bunny tracking experiences on the internet. We're constantly innovating year after year and always thinking of new ways to make tracking more immersive and exciting than the year before.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccAbout-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccAbout" aria-expanded="false" aria-controls="tebccAbout">
+                <i class="material-icons">face</i>&nbsp; Who is behind track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccAbout" class="collapse" aria-labelledby="tebccAbout-header">
+            <div class="card-body maintext-override">
+              Despite the usage of we're and our throughout the tracker, you'd probably be surprised that track.easterbunny.cc is a one-man side project! If you've ever heard of eastmountainfilms on YouTube (or Owen the Dev elsewhere), then who know exactly who's made this site. Hello! <br><br>
+              track.easterbunny.cc is a project that got started in a really interesting and funny way. Back when I was a kid I use to track Santa (as anyone would). Watching Santa fly up the East Coast and then hop into bed was an experience each and every year. Of course as I grew older I stopped tracking Santa, but it was always fun to log onto the websites occasionally and see where he was on Christmas Eve. <br><br>
+              Cue some random December 2017, and I remembered Santa Tracking existed and wondered, hey, does anyone stream it on YouTube? What I found was a patchwork of less-than-stellar streams, and I knew the world deserved better. I fired up OBS, threw up two trackers and some jazz, and got 100,000 views. I still run these streams yearly every year (even though many other big channels have caught onto this and the days of 100k views are long gone). <br><br>
+              It was around this time that I also was introduced to Easter Bunny Tracking. It was a similar concept for Santa, except the Easter Bunny! And what's better than having this awesome tracking experience twice. When I was setting up for my first Easter Bunny tracking stream, I saw that almost all trackers on the internet were subpar and didn't hold a candle to NORAD or Google's Santa Trackers. Furthermore, the site I planned to use (The CP Trackers) went down weeks before the stream. That left Track Easter Bunny as the only site up, a site with a reputation of crashing often during tracking and requiring auto-refresh plugins to get the latest data. Yikes. <br><br>
+              For the 2018 stream, I hacked together a custom Easter Bunny Tracker in WordPress (that still required auto-refresh plugins) and it was hugely successful. People wanted to know what the link was for the tracker! And I couldn't give it out for security reasons due to the hacky nature of it. This inspired me for a huge challenge in 2019 as I started my web development career - make a live Easter Bunny Tracker like Google and NORAD for my stream. Eventually I decided to make this tracker public (after all, why not?), launching track.easterbunny.cc Version 3 (v1 is the 2018 tracker, v2 is the private tracker, this is why we started at v3). <br><br>
+              Since 2019, I've been working on track.easterbunny.cc as a side project in my spare time, slowly but surely making the tracker the best it can be over the last 5 years. It's been quite a challenging project to work on and it's definitely not easy to run the entire show by myself, but it's been an amazing learning experience and has pushed my webdev skills to the limit yearly. Although it's mostly been me the entire time, but I have to give huge credits to folks in my Discord server who helped with v4 development, and who still help out today by testing development versions of the tracker and report bugs back to me. <br><br>
+              So that's who's behind the tracker! You have my big thanks for checking out the site, perusing around, and enjoying the tracker.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="tebccAds-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#tebccAds" aria-expanded="false" aria-controls="tebccAds">
+                <i class="material-icons">attach_money</i>&nbsp; Why are there (still) no ads on track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="tebccAds" class="collapse" aria-labelledby="tebccAds-header">
+            <div class="card-body maintext-override">
+              For the fifth year in operation, track.easterbunny.cc continues to be ad-free. I had originally planned to put ads on the website for 2023 but I found that I was unable to hit a reasonable compromise with putting ads on the website in a non-intrusive way, while also ensuring they would work for the launch of the tracker. <br><br>
+              For 2024, we are planning to put ads in the tracker, notably in the info modal, settings modal, and the countdown screen. The actual core tracker will not contain ads.  <br><br>
+              Nonetheless, costs of the tracker will likely exceed $1,000 for the 2023 run due to the Google Maps API (they bill per map load past 28,000 hits and we've exceeded this for 3 years running). If you enjoy tracking with our tracker, please, consider donating! <br><br>
+              As a compromise for 2023, there is a 1/2 chance you will see a banner 120 seconds after loading the tracker indicating the option to donate.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Orthodox Easter FAQs</h3>
+      <div id="accordion-ortho">
+        <div class="card">
+          <div class="card-header" id="orthoAbout-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoAbout" aria-expanded="false" aria-controls="orthoAbout">
+                <i class="material-icons">help</i>&nbsp; What is Orthodox Easter?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoAbout" class="collapse" aria-labelledby="orthoAbout-header">
+            <div class="card-body maintext-override">
+              Orthodox Easter is a holiday celebrated by Orthodox Christians to celebrate Jesus' resurrection. The date for Orthodox Christian date for Easter generally occurs later than the Easter date observed by western churches, as it is celebrated on the Easter Sunday date in the Julian calendar, compared to the Gregorian calendar for western Easter. <br><br>
+              Orthodox Easter celebrate "the miracle of Easter" on the Easter Sunday date in the Julian calendar. Preparations for Orthodox Easter begin with 40 days of strict fasting before Easter Sunday. Additionally, many Orthodox Christians attend liturgies during the Holy Week that leads up to Easter Sunday.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="orthoSecond-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoSecond" aria-expanded="false" aria-controls="orthoSecond">
+                <i class="material-icons">filter_2</i>&nbsp; Does the Easter Bunny make a second run for Orthodox Easter?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoSecond" class="collapse" aria-labelledby="orthoSecond-header">
+            <div class="card-body maintext-override">
+              It is known that the Easter Bunny makes a second journey around the world for people who observe Orthodox Easter, delivering baskets & eggs in a similar fashion to that of Western Easter, even though an Easter Bunny is not widely associated with Orthodox Easter.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="orthoWhen-header"> 
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoWhen" aria-expanded="false" aria-controls="orthoWhen">
+                <i class="material-icons">today</i>&nbsp; When is Orthodox Easter in 2023?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoWhen" class="collapse" aria-labelledby="orthoWhen-header">
+            <div class="card-body maintext-override">
+              In 2023, Orthodox Easter occurs on <b><span id="2022oebtcal">Sunday, April 16, 2023</span></b>. This is 1 week after Western Easter.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="orthoIs-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoIs" aria-expanded="false" aria-controls="orthoIs">
+                <i class="material-icons">track_changes</i>&nbsp; Is there an Orthodox Easter Bunny Tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoIs" class="collapse" aria-labelledby="orthoIs-header">
+            <div class="card-body maintext-override">
+              track.easterbunny.cc provides a sister service known as track.orthodoxbunny.cc to track the Easter Bunny's second run for Orthodox Easter. As such, sometimes the Easter Bunny is referred to as the Orthodox Easter Bunny during this second run. However, it is the same Easter Bunny doing the deliveries. <br><br>
+              Unfortunately, we will close down this site in 2023 due to low usage and the need to stand up nearly identical infrastructure to track.easterbunny.cc (which takes a lot of time). Please visit the track.orthodoxbunny.cc homepage for more information.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="orthoTrackstart-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoTrackstart" aria-expanded="false" aria-controls="orthoTrackstart">
+                <i class="material-icons">access_alarm</i>&nbsp; When does the Orthodox Easter Bunny Tracker start in 2023?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoTrackstart" class="collapse" aria-labelledby="orthoTrackstart-header">
+            <div class="card-body maintext-override">
+              For 2023, the Easter Bunny will start making final preparations for the Orthodox Easter run on <b><span id="2022oebt-prep">Saturday, April 15, 2023 at 2:00 AM EDT</span></b>, and we will start the Orthodox Easter Bunny Tracker at this time. These final preparations will take three hours. <br><br>
+              The Easter Bunny will lift off from Easter Island for the Orthodox Easter run on <b><span id="2022oebt-liftoff">April 15, 2023 at 5:00 AM EDT</span></b>, and we'll start tracking the Easter Bunny's movements at this time!<br><br>
+              The Easter Bunny will return back home to Easter Island from the Orthodox Easter run on <b><span id="2022oebt-return">April 16, 2023 at 6:00 AM EDT</span>.</b>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="orthoDiff-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#orthoDiff" aria-expanded="false" aria-controls="orthoDiff">
+                <i class="material-icons">compare_arrows</i>&nbsp; Will there be any differences in the Orthodox Easter Bunny Tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="orthoDiff" class="collapse" aria-labelledby="orthoDiff-header">
+            <div class="card-body maintext-override">
+              Both of the trackers will be virtually the same. We plan to reflect a lower baskets delivered count in track.orthodoxbunny.cc. Since Orthodox Easter has a strong connection to Greece, we plan to show more stops in Greece compared to the normal Easter Bunny Tracker. <br><br>
+              We welcome any other suggestions on how we can differentiate the Orthodox Easter Bunny Tracker.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Santa FAQs</h3>
+      <div id="accordion-santa">
+        <div class="card">
+          <div class="card-header" id="santaFAQ-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#santaFAQ" aria-expanded="false" aria-controls="santaFAQ">
+                <i class="material-icons">track_changes</i>&nbsp; Does track.easterbunny.cc have a Santa Tracker?
+              </button>
+            </h4>
+          </div>
+          <div id="santaFAQ" class="collapse" aria-labelledby="santaFAQ-header">
+            <div class="card-body maintext-override">
+              At this time, we're only focused on building the best Easter Bunny Tracker that we can. There are plenty of great Santa Trackers on the internet for you to use, and we've linked a few below that we like.
+              <br><br>
+              NORAD Tracks Santa: <a href="https://noradsanta.org" target="_blank" rel="noopener">https://noradsanta.org</a><br>
+              Google Santa Tracker: <a href="https://santatracker.google.com" target="_blank" rel="noopener">https://santatracker.google.com</a><br><br>
+              If you're interested in building your own Santa Tracker based on track.easterbunny.cc, you can always use our source code and make modifications to turn it into a Santa Tracker!              
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="styledhr">
+      <h3 class="h3pad">Support FAQs</h3>
+      <div id="accordion-support">
+        <div class="card">
+          <div class="card-header" id="supportInfo-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#supportInfo" aria-expanded="false" aria-controls="supportInfo">
+                <i class="material-icons">contact_support</i>&nbsp; How can I get help with track.easterbunny.cc?
+              </button>
+            </h4>
+          </div>
+          <div id="supportInfo" class="collapse" aria-labelledby="supportInfo-header">
+            <div class="card-body maintext-override">
+              If you're having trouble with track.easterbunny.cc, you can contact us on Twitter (through mentioning us, or with direct message), or via email. It's entirely up to you which communication method you prefer! <br><br>
+              Our Twitter handle is <a href="https://twitter.com/bunny_tracking" target="_blank" rel="noopener">@bunny_tracking</a>. <br><br>
+              Our support email address is support (at) easterbunny (dot) cc. <br><br>
+              When requesting support, make sure to include as much detail as possible. The more detail you include, the faster we'll be able to solve your problem! <br><br>
+              If you contact us, we may ask for diagnostic information about your device. In the final FAQ for this section, you'll find the Diagnostic Information you'll need to copy and send back to us.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="supportSpeed-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#supportSpeed" aria-expanded="false" aria-controls="supportSpeed">
+                <i class="material-icons">question_answer</i>&nbsp; How fast will you respond to my support inquiry?
+              </button>
+            </h4>
+          </div>
+          <div id="supportSpeed" class="collapse" aria-labelledby="supportSpeed-header">
+            <div class="card-body maintext-override">
+              We do our best to respond to support inquries in a timely fashion. During tracking, we'll usually respond to any inqueries within a couple of hours Outside of tracking, you can expect a response within 24-48 hours.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="bugFound-header">
+            <h4 class="mb-0">
+              <button class="btn btn-override" data-toggle="collapse" data-target="#bugFound" aria-expanded="false" aria-controls="bugFound">
+                <i class="material-icons">bug_report</i>&nbsp; I found a bug in track.easterbunny.cc! What should I do?
+              </button>
+            </h4>
+          </div>
+          <div id="bugFound" class="collapse" aria-labelledby="bugFound-header">
+            <div class="card-body maintext-override">
+              If you believe you found a bug in track.easterbunny.cc, make sure you report it to us so we can fix the issue! <br><br>
+              You can report it using one of the support methods listed above (although email is preferred for bug reports). Make sure you include as much detail as possible - where the bug is, how to cause the bug, etc. In addition, attach the diagnostic information listed below. <br><br>
+              Before sending in your report, you'll want to make sure this bug can be reproduced (sometimes computers are weird, and one-off bugs occur). Additionally, check our <a href="/knownissues/" target="_blank" rel="noopener">Known Issues</a> page to make sure the bug you're reporting isn't a known issue. <br><br>
+              <b>Note: </b>If you report a bug during tracking, or up to 6 hours before tracking, we won't be able to fix the bug, unless it severely impacts tracker functionality. Bugs reported then will be fixed for the next version of track.easterbunny.cc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="styledhr">
+    <a href="/">Return to the tracker</a>
+  </div>
+</div>
+</body>
+<script>
+  var browser_name = bowser.name
+  var version = bowser.version
+  var os = bowser.osname
+  var osver = bowser.osversion
+
+  var desktop_flag;
+  var mobile_flag;
+  var tablet_flag;
+
+  try {
+    mobile_flag = bowser.mobile
+    tablet_flag = bowser.tablet
+  } catch (e) {
+    mobile_flag = false;
+    tablet_flag = false;
+    desktop_flag = false;
+  }
+
+  var full_os = os + " " + osver;
+
+  if (browser_name == undefined) {
+    document.getElementById("browser").innerHTML = "Unknown Browser"
+  } else if (version == undefined) {
+    document.getElementById("browser").innerHTML = browser_name
+  } else {
+    document.getElementById("browser").innerHTML = browser_name + " " + version
+  }
+  
+  if (os == undefined) {
+    document.getElementById("osname").innerHTML = "Unknown OS"
+  } else if (osver == undefined) {
+    document.getElementById("osname").innerHTML = os
+  } else {
+    document.getElementById("osname").innerHTML = os + " " + osver
+  }
+
+  if (mobile_flag == true) {
+    document.getElementById("devicetype").innerHTML = "Mobile"
+  } else if (tablet_flag == true) {
+    document.getElementById("devicetype").innerHTML = "Tablet"
+  } else if (desktop_flag == false) {
+    document.getElementById("devicetype").innerHTML = "Unknown"
+  } else {
+    document.getElementById("devicetype").innerHTML = "Desktop"
+  }
+
+  if (full_os.includes("macOS 10.15")) {
+    $("#macos-warn").show()
+  }
+
+  if (full_os.includes("macOS 10.16")) {
+    $("#macos11-warn").show()
+  }
+</script>
+</html>

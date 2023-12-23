@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lobster+Two&display=swap');
+.MBox{
+    background-color: #FFFCED;
+    text-align: center;
+    width: 70%;
+    border: 4px #E63946;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+.MBoxTitle{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+}
+.MboxStats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -15px;
+}
+.MBoxStatName{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.MBoxPTStatName{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+.MetricIcon{
+    height: 42px;
+    width: 42px;
+    left: 40px;
+    margin-bottom: 25px;
+}
+.Text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+button{
+    background-color: #DDDDDD;
+    border: transparent;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MetricButton{
+    border-radius: 5px;
+}
+.Arrow{
+    color:#E63946;
+}
+.PTAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mobile{}

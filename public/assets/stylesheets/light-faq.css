@@ -1,0 +1,47 @@
+/*  Easter Bunny Tracker (track.easterbunny.cc) CSS Assets v6.1.2
+    Copyright (C) 2023  track.easterbunny.cc 
+    
+    track.easterbunny.cc is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    track.easterbunny.cc is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with track.easterbunny.cc.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/*
+    Source code is available at https://gitlab.com/track-easterbunny-cc/tebcc
+    License is available at https://track.easterbunny.cc/license
+*/
+
+.card {
+    background-color: #ffffff !important
+}
+
+.btn, .btn-override {
+    color: rgba(0, 0, 0, .87) !important
+}
+
+.carrot-icon {
+    background-image: url("/assets/icons/carrot-128x128-black.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.basket-icon {
+    background-image: url("/assets/icons/basket-128x128-black-2.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}

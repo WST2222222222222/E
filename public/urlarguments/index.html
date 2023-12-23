@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset=utf-8>
+<!--  
+    Easter Bunny Tracker (track.easterbunny.cc) v6.1.2
+    Copyright (C) 2023  track.easterbunny.cc 
+
+    track.easterbunny.cc is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    track.easterbunny.cc is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with track.easterbunny.cc.  If not, see <https://www.gnu.org/licenses/>. 
+-->
+
+<!--
+    Source code is available at https://gitlab.com/track-easterbunny-cc/tebcc
+    License is available at https://track.easterbunny.cc/license
+-->
+
+<!-- Canonical link - Should be set to track.easterbunny.cc for the countdown/pre-tracking/index, otherwise just the url -->
+<head>
+<link rel="canonical" href="https://track.easterbunny.cc/urlarguments/" />
+<meta name="description" content="URL Arguments Documentation for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="URL Arguments Documentation - Easter Bunny Tracker ">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="track.easterbunny.cc">
+<meta property="og:url" content="https://track.easterbunny.cc/urlarguments/">
+<meta property="og:description" content="URL Arguments Documentation for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta property="og:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:secure_url" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta property="og:image:width" content="384">
+<meta property="og:image:height" content="384">
+<meta name="twitter:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta name="twitter:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta name="twitter:creator" content="@bunny_tracking">
+<meta name="twitter:title" content="URL Arguments Documentation - Easter Bunny Tracker">
+<meta name="twitter:description" content="URL Arguments Documentation for the Easter Bunny Tracker available at track.easterbunny.cc.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://track.easterbunny.cc/urlarguments/">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/manifests/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/light.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/dark.css" crossorigin="anonymous" disabled>
+<link rel="stylesheet" href="/assets/stylesheets/plead.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/linkwrapper.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" integrity="sha384-2wrSrTEHqvdtiVAZygJZuYUeKryvoEf1n4xaniOxF7VWWtiZOMGiVx6hTop4W7Nz" crossorigin="anonymous"></script>
+<script src="/assets/js/appswitch.js"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+<title>Easter Bunny Tracker 2023 - URL Arguments Documentation</title>
+</head>
+
+<style>
+  body {
+    font-family: 'Roboto'
+  }
+
+  .top-card {
+    touch-action: manipulation;
+  }
+
+  .material-icons {
+    font-feature-settings: "liga"
+  }
+</style>
+
+<script>
+  var ls_avail = true;
+  var appearance = "automatic";
+  var mapmode = "street";
+  var bunnybounce = "off";
+  var weathersummary = "off";
+  var ebarrival = "on";
+  var pcs_raw_avail = false;
+  var old_browser = false;
+  try {
+    var pcs_raw = window.matchMedia('(prefers-color-scheme: dark)')
+    pcs_raw_avail = true;
+  } catch (e) {
+    // empty
+  }
+  
+  
+  try {
+    localStorage.setItem("ls-test", "ls-test")
+    localStorage.removeItem("ls-test")
+  } catch (e) {
+    ls_avail = false;
+  }
+  
+  // Ensure that local settings are init'd, otherwise select proper buttons for settings.
+  // Also don't do the initting if the ls is unavail
+  if (ls_avail == true) {
+    try {
+      // These pages fall outside the order of the DataManager, so for now if we can't get settings, then just mark LS avail as null.
+      if (localStorage.getItem("settings") == null) {
+        ls_avail = false
+      }
+
+      // Match settings via JSON.parse
+      var settings = JSON.parse(localStorage.getItem("settings"))
+      appearance = settings['appearance']
+    } catch (e) {
+      // empty
+    }
+  }
+  
+  $(function () {
+    try {
+      if (appearance == "dark" || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+        $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', true);
+        $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', false);
+      } else if (appearance == "light" || (!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+        // empty
+      }
+    } catch (e) {
+      // empty
+    }
+
+    $("#switcherbutton").show()
+    // eslint-disable-next-line no-undef
+    initButton(appearance);
+    // eslint-disable-next-line no-undef
+    initLink()
+
+    $(".btn").focus(function() {
+      this.blur();
+    })
+
+    $(".btn").focusin(function() {
+      this.blur();
+    })
+
+    $(".btn").focusout(function() {
+      this.blur();
+    })
+  })
+  
+  if (pcs_raw_avail) {
+    pcs_raw.addListener(function() {
+      if (((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+        $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', true);
+        $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', false);
+      } else if ((!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && appearance == "automatic")) {
+        $('link[rel="stylesheet"][href="/assets/stylesheets/light.css"]').prop('disabled', false);
+        $('link[rel="stylesheet"][href="/assets/stylesheets/dark.css"]').prop('disabled', true);
+      }
+    })
+  }
+
+// eslint-disable-next-line no-undef
+document.addEventListener("visibilitychange", vischange_button)
+// eslint-disable-next-line no-undef
+document.addEventListener("focus", vischange_button)
+window.onpageshow = function(event) {
+  if (event.persisted) {
+    // eslint-disable-next-line no-undef
+    vischange_button()
+  }
+}
+</script>
+
+<body class="top-card" id="mainbody">
+  <div class="preload" style="opacity: 0; width: 0px; height: 0px;">
+    <i class="material-icons">brightness_auto</i>
+    <i class="material-icons">brightness_4</i>
+    <i class="material-icons">brightness_5</i>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col" style="padding: 2em">
+      <button type="button" id="switcherbutton" class="btn top-card" onclick="styleSwitch()" style="float: right; display: none"><i id="appearance_button" class="material-icons" style="line-height: unset"></i></button>
+      <p class="lead">Easter Bunny Tracker - URL Arguments Documentation</p>
+      <p>Last updated: June 24, 2020</p>
+      <hr class="styledhr">
+      <p>
+        <b>Note: </b>The URL arguments feature has been removed from Version 5 of track.easterbunny.cc in an effort to streamline the codebase of the tracker, and remove feature bloat. We encourage you to set up the tracker settings from the settings window of the tracker. <br><br>
+        We will be implementing a new default zoom level feature in Version 5 of track.easterbunny.cc, if you did use the zl argument from URL arguments. <br><br>
+        It is possible that URL arguments may return in a future version of track.easterbunny.cc. If you are affected by the removal of URL arguments, you can contact us for your feedback. <br><br>
+        For archival purposes, and given that Version 4.5.4 will stay up until early 2021, the original contents of this page are being preserved.
+        <hr class="styledhr">
+        track.easterbunny.cc Version 4.5.0 includes a new feature to pass URL arguments to manipulate settings of the tracker along with the zoom level. We implemented this feature to make it easier to stream the tracker in environments where direct interaction with the tracker isn't possible, and for advanced users.
+        <br><br>
+        In this document, we're using arguments/value terminology. If you've ever heard of URL parameters, or a URL query string, this is the same thing.
+        <br><br>
+        URL arguments are a string of argument and value pairs trailing a URL. To start defining URL arguments, the ? character is used following the URL. After this, you start defining arguments and values, separating them with the = character and without any spaces. For instance, if you wanted to pass the argument "foo" with value "bar" to our main page, you would input this as the URL:
+        <br><br>
+        <code>https://track.easterbunny.cc/?foo=bar</code>
+        <br><br>
+        If you want to pass more than one argument/value pair, you can use the & symbol to indicate the end of one argument/value pair, and the start of another one. For instance, if I wanted to pass the foo/bar pair from above, and another argument "eggs" with value "ham", you would join the two with the & symbol mentioned earlier. Here's how this would look.
+        <br><br>
+        <code>https://track.easterbunny.cc/?foo=bar&eggs=ham</code>
+        <br><br>
+        URL arguments can only be passed on track.easterbunny.cc/, and track.easterbunny.cc/countdown/. Pages such as this one, the FAQs, etc. don't accept URL arguments, and won't change tracker settings if they do receive arguments. Arguments passed to the countdown page are passed to the main page when a redirection occurs (such as when tracking starts), and vice versa in the other direction (such as hitting the main page but tracking hasn't started). If you define the same argmuent twice, the value that is closest to the ? symbol will be used.
+        <br><br>
+        The available arguments are as follows.
+        <hr class="styledhr">
+        <b><code>reset</code> - Controls resetting tracker settings</b><br>
+        This argument can take on two values for controlling how the tracker settings are reset. <br>
+        <b>-</b> <code>default</code> (<code>?reset=default</code> or <code>&reset=default</code>) to change the tracker settings to default settings<br>
+        <b>-</b> <code>stream</code> (<code>?reset=stream</code> or <code>&reset=stream</code>) to change the tracker settings to optimal livestreaming settings<br><br>
+        When passing the reset argument, all other arguments will be ignored. If you want to change settings after passing the reset argument, you'll need to load the page again with those arguments. <br><br>
+        Once the settings reset has taken place, in most cases, all arguments will be removed from the URL. However, if the tracker cannot automatically remove all arguments after the reset, make sure you remove the argument yourself.
+        <hr class="styledhr">
+        <b><code>zl</code> - Controls zoom level & default zoom level of the map</b><br>
+        This argument can take on an integer between 0 and 20, plus the ! symbol to indicate a partial zoom override. For instance,<br>
+        <b>-</b> <code>4</code> (<code>?zl=4</code> or <code>&zl=4</code>) will set the tracker on load and default zoom level to 4 (full override).<br>
+        <b>-</b> <code>9</code> (<code>?zl=9</code> or <code>&zl=9</code>) will set the tracker on load and default zoom level to 9 (full override).<br>
+        <b>-</b> <code>4!</code> (<code>?zl=4!</code> or <code>&zl=4!</code>) will set only the tracker on load zoom level to 4 (partial override).<br>
+        <b>-</b> <code>9!</code> (<code>?zl=9!</code> or <code>&zl=9!</code>) will set only the tracker on load zoom level to 9 (partial override).<br>
+        For the zoom levels to be affected, this argument must always be present. <br><br>
+        A full override means that when the tracker is loaded (or transitions from pre-tracking to tracking), it will zoom to the zoom level indicated in the argument. Additionally, if you recenter the map on the Easter Bunny, the tracker will use the zoom level you provided to set the zoom level when the recenter occurs. <br><br>
+        A partial override means that when the tracker is loaded (or transitions from pre-tracking to tracking), it will zoom to the zoom level indicated in the argument. However, if you recenter the map on the Easter Bunny, the tracker will zoom to either zoom level 5 on a mobile device, and zoom level 6 on all other devices. <br><br>
+        A lower zoom level means that the map will be more zoomed out. A higher zoom level means that the map will be more zoomed in. As according to Google, this list shows the approximate level of detail to expect at different zoom levels:
+        <ul>
+          <li>1: World</li>
+          <li>5: Landmass/continent</li>
+          <li>10: City</li>
+          <li>15: Streets</li>
+          <li>20: Buildings</li>
+        </ul>
+        If you need to figure out what zoom level you'd like to use, you can measure the clicks in and out when using the zoom keys on the bottom right of the tracker. On mobile devices, start at 5 for the zoom level, and 6 for all other devices. As you zoom in, add to the number by 1. As you zoom out, subtract from the number by 1.
+        <hr class="styledhr">
+        <b><code>appearance</code> - Controls the appearance of the tracker</b><br>
+        This argument can take on three values corresponding to the appearance of the tracker. <br>
+        <b>-</b> <code>automatic</code> (<code>?appearance=automatic</code> or <code>&appearance=automatic</code>) will set the tracker appearance to automatic, which is determined by your device's appearance settings.<br>
+        <b>-</b> <code>light</code> (<code>?appearance=light</code> or <code>&appearance=light</code>) will set the tracker appearance to light mode. <br>
+        <b>-</b> <code>dark</code> (<code>?appearance=dark</code> or <code>&appearance=dark</code>) will set the tracker appearance to dark mode. <br><br>
+        When streaming the tracker, it's best to set this argument to a specific appearance mode (<code>light</code> or <code>dark</code>). This is so if your device goes in and out of light/dark mode automatically (on a timer or with the sunrise/sunset), the appearance of the tracker doesn't change with that when streaming.
+        <hr class="styledhr">
+        <b><code>ebarrival</code> - Controls visibility of the Easter Bunny arrival time estimate</b><br>
+        This argument can take on two values to turn this feature on/off.<br>
+        <b>-</b> <code>on</code> (<code>?ebarrival=on</code> or <code>&ebarrival=on</code>) will show the Easter Bunny arrival time estimate in the Next Stop box.<br>
+        <b>-</b> <code>off</code> (<code>?ebarrival=off</code> or <code>&ebarrival=off</code>) will hide the Easter Bunny arrival time estimate in the Next Stop box.<br><br>
+        When streaming the tracker, it's best to set this argument to <code>off</code>, as to not reveal your location.
+        <hr class="styledhr">
+        <b><code>mapmode</code> - Controls the map mode of the tracker</b><br>
+        This argument can take on three values to change the different map modes of the tracker.<br>
+        <b>-</b> <code>street</code> (<code>?mapmode=street</code> or <code>&mapmode=street</code>) will change the tracker map mode to street mode.<br>
+        <b>-</b> <code>satellite</code> (<code>?mapmode=satellite</code> or <code>&mapmode=satellite</code>) will change the tracker map mode to satellite mode.<br>
+        <b>-</b> <code>hybrid</code> (<code>?mapmode=hybrid</code> or <code>&mapmode=hybrid</code>) will change the tracker map mode to hybrid mode.
+        <hr class="styledhr">
+        <b><code>ebbounce</code> - Controls the Easter Bunny bouncing effect</b><br>
+        This argument can take on two values to turn this feature on/off.<br>
+        <b>-</b> <code>on</code> (<code>?ebbounce=on</code> or <code>&ebbounce=on</code>) will turn the bouncing effect on. <br>
+        <b>-</b> <code>off</code> (<code>?ebbounce=off</code> or <code>&ebbounce=off</code>) will turn the bouncing effect off. <br><br>
+        When streaming the tracker, you may want to consider setting this argument to <code>off</code>, as some viewers may get distracted by the bouncing effect.
+        <hr class="styledhr">
+        <b><code>wssi</code> - Controls visibility of the weather summary in the stop information window</b><br>
+        This argument can take on two values to turn this feature on/off.<br>
+        <b>-</b> <code>on</code> (<code>?wssi=on</code> or <code>&wssi=on</code>) will show the weather summary in the stop information window. <br>
+        <b>-</b> <code>off</code> (<code>?wssi=off</code> or <code>&wssi=off</code>) will hide the weather summary in the stop information window.
+      </p>
+        <hr class="styledhr">
+        <h3>Questions?</h3>
+        If you have any questions about how the URL arguments feature works, we're here to help you! We understand that it can be a bit confusing!<br><br>
+        You can tweet us (<a href="https://twitter.com/bunny_tracking" target="_blank" rel="noopener">@bunny_tracking</a>) if you have any questions. If you don't use Twitter, you can also email us: support (at) easterbunny (dot) cc
+      </p>
+      <hr class="styledhr">
+      <a href="https://twitter.com/bunny_tracking" target="_blank" rel="noopener">Follow us on Twitter (@bunny_tracking)</a>
+      <hr class="styledhr">
+      <a href="https://twitter.com/bunny_updates" target="_blank" rel="noopener">Follow the Easter Bunny's journey on Twitter (@bunny_updates)</a>
+      <hr class="styledhr">
+      <a style="padding-bottom: 40px" id="bottom-href" href="/">Return to the tracker</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

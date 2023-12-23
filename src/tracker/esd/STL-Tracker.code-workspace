@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "C:/Users/elija/Downloads/tebcc-master/tebcc-master"
+		},
+		{
+			"path": "../../../../stl-geo-api"
+		},
+		{
+			"path": "../../../../santatrackerlive"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "STL-Tracker"
+	}
+}

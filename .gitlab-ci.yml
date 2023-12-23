@@ -1,0 +1,209 @@
+# 5-stage pipeline for TEBCC to get itself online.
+# In short...
+# First stage is route compilation on all branches.
+# Simultaneously we run a maxmind check (maxmind_check_update & maxmind_upload if needed).
+# Then we build the tracker once compilation is done, jobs depending on which branch we're in
+# Then we deploy the tracker, again depending on which branch since there's small differences on deployment depending on the environment
+# In production only, we trigger the twitter bot pipeline to run so it can fetch the latest route information
+
+stages:          
+  - maxmind
+  - compile
+  - build
+  - deploy
+  - post_deploy
+
+route-compile:
+    stage: compile
+    image: python:3.11-buster
+    needs: []
+    rules:
+        - if: $CI_COMMIT_MESSAGE =~ /^skip compile/
+          when: never
+        - if: $CI_COMMIT_BRANCH == "dev"
+        - if: $CI_COMMIT_BRANCH == "staging"
+        - if: $CI_COMMIT_BRANCH == "main"
+    script:
+        - export DEBIAN_FRONTEND=noninteractive
+        - apt-get -y install tzdata
+        - ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
+        - dpkg-reconfigure --frontend noninteractive tzdata
+        - pip3 install -r compiler/requirements.txt
+        - cd compiler && python3 compile.py
+    artifacts:
+        untracked: false
+        paths:
+            - compiler/route.json
+            - compiler/route_compiled.tsv
+            - .env*
+        expire_in: 3 days
+
+maxmind_check_update:
+    stage: maxmind
+    image: python:3.11-alpine3.18
+    needs: []
+    rules:
+        - if: $CI_COMMIT_BRANCH == "main"
+    script:
+        - pip3 install requests
+        - cd maxmind && python3 update.py
+    artifacts:
+        untracked: false
+        paths:
+            - maxmind/
+        reports:
+            dotenv: maxmind/update.env
+        expire_in: 3 days
+
+maxmind_upload:
+    stage: maxmind
+    image: alpine:3.18
+    needs: ["maxmind_check_update"]
+    rules:
+        - if: $CI_COMMIT_BRANCH == "main"
+    script:
+        - if [[ $(cat maxmind/update.env) != "MAXMIND_UPLOAD_RUN=true" ]]; then echo "Skipping MaxMind upload as there was no update required"; exit 0; fi;
+        - apk add openssh
+        - apk add --no-cache lftp
+        - mkdir /root/.ssh
+        - chmod 700 /root/.ssh
+        - touch /root/.ssh/known_hosts
+        - chmod 600 /root/.ssh/known_hosts
+        - ssh-keyscan -p $SERVER_PORT -H $HOST >> /root/.ssh/known_hosts
+        - lftp -e "put -O $GEOAPI_PATH maxmind/GeoLite2-City.mmdb; bye" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+        - eval $(ssh-agent -s)
+        - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+        - ssh $USERNAME@$HOST -p $SERVER_PORT "service apache2 restart"
+        
+build_development:
+    stage: build
+    image: node:18-alpine3.18
+    needs: ["route-compile"]
+    rules:
+        - if: $CI_COMMIT_MESSAGE =~ /^skip build/
+          when: never
+        - if: $CI_COMMIT_BRANCH == "dev"
+    script:
+        - apk add git
+        - npm install
+        - npm run build:development
+    artifacts:
+        untracked: false
+        paths:
+            - build/
+        expire_in: 3 days
+
+build_staging:
+    stage: build
+    image: node:18-alpine3.17
+    needs: ["route-compile"]
+    rules:
+        - if: $CI_COMMIT_MESSAGE =~ /^skip build/
+          when: never
+        - if: $CI_COMMIT_BRANCH == "staging"
+    script:
+        - apk add git
+        - npm install
+        - npm run build:staging
+    artifacts:
+        untracked: false
+        paths:
+            - build/
+        expire_in: 3 days
+
+build_production:
+    stage: build
+    image: node:18-alpine3.18
+    needs: ["route-compile"]
+    rules:
+        - if: $CI_COMMIT_MESSAGE =~ /^skip build/
+          when: never
+        - if: $CI_COMMIT_BRANCH == "main"
+    script:
+        - apk add git
+        - npm install
+        - npm run build:production
+    artifacts:
+        untracked: false
+        paths:
+            - build/
+        expire_in: 3 days
+
+deploy_development:
+    stage: deploy
+    image: alpine:3.18
+    needs: ["build_development", "route-compile"]
+    environment:
+        name: nonprod
+        url: https://nonprod.santatracker.live
+    rules:
+        - if: $CI_COMMIT_BRANCH == "dev"
+    script:
+        - apk add openssh
+        - apk add --no-cache lftp
+        - mkdir /root/.ssh
+        - chmod 700 /root/.ssh
+        - touch /root/.ssh/known_hosts
+        - chmod 600 /root/.ssh/known_hosts
+        - ssh-keyscan -p $SERVER_PORT -H $HOST >> /root/.ssh/known_hosts
+        # This outputs the entire build/ folder to the base folder of the remote server
+        - lftp -e "mirror -P 10 --transfer-all --reverse --delete -X .* -X .*/ --verbose /builds/tebcc/tebcc-v6/build/ $SERVER_PATH/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+        # This outputs the entire compiler/ folder to the /static/routes/ folder of the remote server
+        - lftp -e "mirror -P 10 --include "route.json" --reverse --delete -X .* -X .*/ -X ./*/ --verbose /builds/tebcc/tebcc-v6/compiler/ $SERVER_PATH/static/routes/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+
+deploy_staging:
+    stage: deploy
+    image: alpine:3.18
+    needs: ["build_staging", "route-compile"]
+    environment:
+        name: staging
+        url: https://staging.santatracker.live
+    rules:
+        - if: $CI_COMMIT_BRANCH == "staging"
+    script:
+        - apk add openssh
+        - apk add --no-cache lftp
+        - mkdir /root/.ssh
+        - chmod 700 /root/.ssh
+        - touch /root/.ssh/known_hosts
+        - chmod 600 /root/.ssh/known_hosts
+        - ssh-keyscan -p $SERVER_PORT -H $HOST >> /root/.ssh/known_hosts
+        # This outputs the entire build/ folder to the base folder of the remote server
+        - lftp -e "mirror -P 10 --transfer-all --reverse --delete -X .* -X .*/ --verbose /builds/tebcc/tebcc-v6/build/ $SERVER_PATH/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+        # This outputs the entire compiler/ folder to the /static/routes/ folder of the remote server
+        - lftp -e "mirror -P 10 --include "route.json" --reverse --delete -X .* -X .*/ -X ./*/ --verbose /builds/tebcc/tebcc-v6/compiler/ $SERVER_PATH/static/routes/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+
+deploy_production:
+    stage: deploy
+    image: alpine:3.18
+    needs: ["build_production", "route-compile"]
+    environment:
+        name: production
+        url: https://track.santatracker.live
+    rules:
+        - if: $CI_COMMIT_BRANCH == "main"
+    script:
+        - apk add openssh
+        - apk add --no-cache lftp
+        - mkdir /root/.ssh
+        - chmod 700 /root/.ssh
+        - touch /root/.ssh/known_hosts
+        - chmod 600 /root/.ssh/known_hosts
+        - ssh-keyscan -p $SERVER_PORT -H $HOST >> /root/.ssh/known_hosts
+        # This outputs the entire build/ folder to the base folder of the remote server
+        - lftp -e "mirror -P 10 --transfer-all --reverse --delete -X .* -X .*/ --verbose /builds/tebcc/tebcc-v6/build/ $SERVER_PATH/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+        # This outputs the entire compiler/ folder to the /static/routes/ folder of the remote server
+        - lftp -e "mirror -P 10 --include "route.json" --reverse --delete -X .* -X .*/ -X ./*/ --verbose /builds/tebcc/tebcc-v6/compiler/ $SERVER_PATH/static/routes/; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+        # This throws up the route to a non-cached on WordPress
+        # At some point, we should call CloudFlare to turn off caching
+        - lftp -e "mirror -P 10 --include "route.json" --reverse --delete -X .* -X .*/ --verbose /builds/tebcc/tebcc-v6/compiler/ $UNCACHED_ROUTE; quit" -u $USERNAME,$PASSWORD sftp://$HOST -p $SERVER_PORT
+
+post_deploy_twitter:
+    stage: post_deploy
+    rules:
+        - if: $CI_COMMIT_BRANCH == "main"
+    needs: ["deploy_production"]
+    trigger: tebcc/twitter-bot
+
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive

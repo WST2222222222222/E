@@ -1,0 +1,2 @@
+const KM_TO_MI_DIVISOR = 1.609344
+export default KM_TO_MI_DIVISOR

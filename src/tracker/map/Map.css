@@ -1,0 +1,12 @@
+#map {
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.gm-style[data-chromemapfix="true"] div {
+    -webkit-transform: scale(1.0015);
+    transform: scale(1.0015);
+}

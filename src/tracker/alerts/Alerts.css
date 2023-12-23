@@ -1,0 +1,25 @@
+.alert-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.25s linear, opacity 0.25s linear;
+}
+
+.alert-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s linear, opacity 0.25s linear;
+}
+
+/** @media (max-width: 767px) {
+    .alertbox-div {
+        min-width: 33.33%;
+        max-width: 66.67%;
+    }
+}
+
+@media (min-width: 768px) {
+    .alertbox-div {
+        min-width: 16.67%;
+        max-width: 33.33%;
+    }
+} **/

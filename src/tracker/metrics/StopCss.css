@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Lobster+Two&display=swap');
+
+.Title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Box{
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+width: 201px;
+height: 67px;
+
+background: #E63946;
+border-width: 0px 2px 3px 0px;
+border-style: solid;
+border-color: #9D3432;
+border-radius: 45px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Stop{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    font: left;
+    color: #333333;
+    margin-top: 15px;
+}
+
+.Mobile {
+    display: none;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 575px) {
+    .Mobile {
+      display: block;
+    }}
+    .pretrackmobile{
+        display: block;
+    }
+.Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* #mobile{
+    display: none;
+} */
+@media (max-width: 575px) {
+    #mobile{
+         display: none;
+    }
+    .pretrackmobile{
+        display: block;
+    }
+ }
+ @media (max-width: 1000px) {
+    .thirdHide{
+         display: none;
+    }
+
+ }
+ @media (max-width: 1000px) {
+    .countHide{
+         display: block;
+    }
+ }
+ @media (min-width: 576px) {
+    .pretrackmobile{
+        display: none;
+    }
+ }
+ .Align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .Responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }

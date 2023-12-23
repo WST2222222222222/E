@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+#.env.local
+#.env.development.local
+#.env.test.local
+#.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python files
+venv/*
+__pycache__/*
+
+# IDEA files
+.idea/*
+
+# XML files
+workspace.xml
+
+# Anything pyc
+.pyc
+*.pyc
+compiler/__pycache__/Compiler.cpython-38.pyc
+
+# Route file
+route.json
+route_compiled.tsv

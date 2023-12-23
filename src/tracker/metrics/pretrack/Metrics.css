@@ -1,0 +1,17 @@
+.font{
+    color: #000;
+    font-family: 'Lobster Two', cursive;
+    font-size: 125%;
+}
+.pretrackmobile{
+    color: #000;
+    text-align: center;
+}
+
+.Mobile {
+    display: none;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+  }

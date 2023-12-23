@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset=utf-8>
+<!--  
+    Easter Bunny Tracker (track.easterbunny.cc) v6.1.2
+    Copyright (C) 2023  track.easterbunny.cc 
+
+    track.easterbunny.cc is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    track.easterbunny.cc is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with track.easterbunny.cc.  If not, see <https://www.gnu.org/licenses/>. 
+-->
+
+<!--
+    Source code is available at https://gitlab.com/track-easterbunny-cc/tebcc
+    License is available at https://track.easterbunny.cc/license
+-->
+
+<head>
+<!-- Canonical link - Should be set to track.easterbunny.cc for the countdown/pre-tracking/index, otherwise just the url -->
+<link rel="canonical" href="https://track.easterbunny.cc/" />
+<meta name="description" content="Track the Easter Bunny with live updates on a moving map with our Easter Bunny Tracker as the Easter Bunny delivers baskets and eggs to homes around the world!">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Easter Bunny Tracker 2023">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Easter Bunny Tracker 2023">
+<meta property="og:url" content="https://track.easterbunny.cc/">
+<meta property="og:description" content="Track the Easter Bunny with live updates on a moving map with our Easter Bunny Tracker as the Easter Bunny delivers baskets and eggs to homes around the world!">
+<meta property="og:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:secure_url" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta property="og:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta property="og:image:width" content="384">
+<meta property="og:image:height" content="384">
+<meta name="twitter:image" content="https://track.easterbunny.cc/assets/icons/android-icon-384x384.png">
+<meta name="twitter:image:alt" content="Icon of an Easter Bunny standing up straight">
+<meta name="twitter:creator" content="@bunny_tracking">
+<meta name="twitter:title" content="Easter Bunny Tracker 2023">
+<meta name="twitter:description" content="Track the Easter Bunny with live updates on a moving map with our Easter Bunny Tracker as the Easter Bunny delivers baskets and eggs to homes around the world!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://track.easterbunny.cc/">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/manifests/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/stylesheets/linkwrapper.css" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js" integrity="sha256-tS9rYBF0HnbO+ivkEWS7ybM7ujNLmtFbA6utN7YJ2YM=" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+<noscript>
+  <META HTTP-EQUIV="Refresh" CONTENT="0;URL=/jsdisabled/">
+</noscript>
+
+<script>
+  // If a client has a compatible browser, get it off the page!
+  var browser_name = bowser.name
+  var browser_version = bowser.version
+  var browser_os = bowser.osname
+
+  if (browser_name == "Chrome" || browser_name == "Chromium") {
+    if (browser_version >= 49) {
+      window.location.replace("/")
+    }
+  } else if (browser_name == "Firefox") {
+    if (browser_version >= 52) {
+      window.location.replace("/")
+    }
+  } else if (browser_name == "Safari") {
+    if (browser_version >= 9) {
+      window.location.replace("/")
+    }
+  } else if (browser_name == "Opera") {
+    if (browser_version >= 36) {
+      window.location.replace("/")
+    }
+  } else if (browser_name == "Android") {
+    if (browser_version > 4) {
+      window.location.replace("/")
+    }
+  } else if (browser_name == "Windows Phone") {
+    if (browser_version >= 10) {
+      window.location.replace("/")
+    }
+  }
+</script>
+
+<title>You have an incompatible browser</title>
+</head>
+
+<style>
+  body {
+    font-family: 'Roboto'
+  }
+</style>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col" style="padding: 2em">
+      <p class="lead">Uh oh! Your browser is incompatiable with santatracker.live</p>
+      <hr>
+      <p>Hi! Thanks for visiting santatracker.live. Unfortunately, your current browser is incompatible with santatracker.live. To view the tracker, you'll need to upgrade your browser to a newer version. If that isn't possible, you'll have to use a new device. <br><br>
+      This is the current list of supported browsers for santatracker.live: <br>
+      <ul>
+        <li>Chrome 49 or higher</li>
+        <li>Firefox 52 or higher</li>
+        <li>Opera 36 or higher</li>
+        <li>Android 4.4.2 or higher</li>
+        <li>Safari 9 or higher</li>
+        <li>Any version of Microsoft Edge (Internet Explorer is unsupported)</li>
+      </ul>
+      If it's more convenient, you can search YouTube for "santa tracker live" to track Santa. You can also check our Twitter, Instagram, and Facebook page for updates on Santa's whereabouts. <br><br>
+      Thanks for your interest in santatracker.live!
+      <hr>
+      This page was pulled up because our code detected an incompatible browser. The technical details about what we detected are below. <br><br>
+      <b>Browser: </b><span id="browser">Loading...</span><br> 
+      <b>OS: </b><span id="osname">Loading...</span><br>
+      <b>Device type: </b><span id="devicetype"></span>
+      <span id="macos-warn" hidden><br><b>Note: </b>If you are using an iPad, the OS field may appear as macOS 10.15/macOS 10.16.</span>
+      <span id="macos11-warn" hidden><br><b>Note: </b>If you are using macOS 11.0 (Big Sur), the OS field may appear as macOS 10.16.</span>
+      <br><br>
+      If this is incorrect, email help@santatracker.live. Include the details above, along with the correct details of your Browser and OS. Thanks! 
+    </p>
+        <hr>
+        v6.1.2 · &copy; 2023 santatracker.live<br><br>
+        Follow our Twitter: <a href="https://twitter.com/santatracklive" rel="noopener" target="_blank">@santatracklive</a><br>
+        Track Santa's journey on Twitter: <a href="https://twitter.com/santatracklive" rel="noopener" target="_blank">@santatracklive</a>
+      <br>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  var browser_name = bowser.name
+  var version = bowser.version
+  var os = bowser.osname
+  var osver = bowser.osversion
+
+  var desktop_flag;
+  var mobile_flag;
+  var tablet_flag;
+
+  try {
+    mobile_flag = bowser.mobile
+    tablet_flag = bowser.tablet
+  } catch (e) {
+    mobile_flag = false;
+    tablet_flag = false;
+    desktop_flag = false;
+  }
+
+  var full_os = os + " " + osver
+
+  if (browser_name == undefined) {
+    document.getElementById("browser").innerHTML = "Unknown Browser"
+  } else if (version == undefined) {
+    document.getElementById("browser").innerHTML = browser_name
+  } else {
+    document.getElementById("browser").innerHTML = browser_name + " " + version
+  }
+  
+  if (os == undefined) {
+    document.getElementById("osname").innerHTML = "Unknown OS"
+  } else if (osver == undefined) {
+    document.getElementById("osname").innerHTML = os
+  } else {
+    document.getElementById("osname").innerHTML = os + " " + osver
+  }
+
+  if (mobile_flag == true) {
+    document.getElementById("devicetype").innerHTML = "Mobile"
+  } else if (tablet_flag == true) {
+    document.getElementById("devicetype").innerHTML = "Tablet"
+  } else if (desktop_flag == false) {
+    document.getElementById("devicetype").innerHTML = "Unknown"
+  } else {
+    document.getElementById("devicetype").innerHTML = "Desktop"
+  }
+
+  if (full_os.includes("macOS 10.15")) {
+    document.getElementById("macos-warn").hidden = false
+  }
+
+  if (full_os.includes("macOS 10.16")) {
+    document.getElementById("macos11-warn").hidden = false
+  }
+</script>

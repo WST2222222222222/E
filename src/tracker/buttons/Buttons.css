@@ -1,0 +1,208 @@
+@media screen and (min-height: 385px) {
+    .btn {
+        padding: .625rem 1rem .625rem 1rem !important;
+    }
+
+    #donateButton {
+        padding-right: 22px !important;
+    }
+
+    #uncenterButton {
+        width: 52px !important;
+        height: 40px !important;
+    }
+
+    #buttonsBase {
+        left: 10px;
+        bottom: 32px;
+    }
+}
+
+@media screen and (max-height: 385px) {
+    .btn {
+        padding: .5rem .75rem .5rem .75rem !important;
+    }
+
+    #donateButton {
+        padding-right: 19px !important;
+    }
+
+    #uncenterButton {
+        width: 44px !important;
+        height: 36px !important;
+    }
+
+    #buttonsBase {
+        left: 5px;
+        bottom: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .list-group-item {
+        padding: 0.6rem 1rem !important
+    }
+}
+.settingsButtonImg {
+    background-image: url("https://www.santatracker.live/icons/settings.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    bottom: -0.2rem;
+}
+.settingsButtonBg{
+position: absolute;
+width: 51px;
+height: 51px;
+
+position: absolute;
+width: 50.29px;
+height: 48.88px;
+left: 15.71px;
+top: 567.12px;
+
+background: #9D3432;
+border-radius: 45px;
+
+box-sizing: border-box;
+
+position: absolute;
+width: 49.58px;
+height: 48.88px;
+left: 15px;
+top: 565px;
+
+background: #FFFFFF;
+border: 4px solid #E63946;
+border-radius: 45px;
+
+}
+
+.santa-icon-small {
+    background-image: url("../../images/Santa-Fly-GIF.gif");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    bottom: -0.2rem;
+}
+
+.gift-icon-small {
+    background-image: url("../../images/stops.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 18px;
+    bottom: -0.2rem;
+}
+
+.center-icon {
+    background-image : url("https://www.santatracker.live/icons/center.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.center-icon-dark {
+    background-image : url("https://www.santatracker.live/icons/center.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.uncenter-icon {
+    background-image: url("https://www.santatracker.live/icons/uncenter.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.uncenter-icon-dark {
+    background-image: url("https://www.santatracker.live/icons/uncenter.png");
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+}
+
+.small-icon {
+    height: 40px;
+    width: 40px;
+    bottom: -0.2rem;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+}
+.classicButton{
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 50%;
+    border: solid 7px #E63946;
+    filter: drop-shadow(4px 4px 0px #9D3432);
+}
+.settingsButton{
+    padding: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 50%;
+    border: solid 7px #006032;
+    filter: drop-shadow(4px 4px 0px #003119);
+}
+.MusicButton{
+    background: #F76772;
+    text-align: center;
+    width: 60%;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    font-size: 2.3em;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.musicModals{
+    display: flex;
+}
+.musicModalOne{
+    background-color: #006032;
+}
+.MusicButtonNew{
+    background: #6E9E75;
+    text-align: center;
+    width: 60%;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    font-size: 2.3em;
+}
+#play{
+    
+}
+.styled{
+    color: black;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 20px;
+}

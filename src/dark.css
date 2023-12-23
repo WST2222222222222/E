@@ -1,0 +1,144 @@
+/* For all CSS stuff, you have to add body[data-dark="true"] to get it to work in dark mode.
+   It kinda sucks but oh well */
+
+body[data-dark="true"] {
+    color: #eee !important;
+}
+
+body[data-dark="true"] .card {
+    background-color: #313131 !important;
+    color: #fff !important;
+    font-family: 'Jost', sans-serif;
+}
+
+body[data-dark="false"] .alertbox.bg-success {
+    background-color: #dbefdc !important;
+    color: #285b2a !important;
+    font-family: 'Jost', sans-serif;
+} 
+
+body[data-dark="false"] .alertbox.bg-success {
+    background-color: #dbefdc !important;
+    color: #285b2a !important;
+    font-family: 'Jost', sans-serif;
+}
+
+body[data-dark="false"] .alertbox.bg-danger {
+    background-color: rgba(220, 76, 100, var(--mdb-bg-opacity)) !important;
+    font-family: 'Jost', sans-serif;
+}
+
+body[data-dark="false"] .alertbox.bg-danger {
+    background-color: rgba(220, 76, 100, var(--mdb-bg-opacity)) !important;
+    font-family: 'Jost', sans-serif;
+}
+
+body[data-dark="false"] .modal-content {
+    background-color: #313131 !important;
+    color: #000 !important;
+    filter: drop-shadow(0px 0px 15px #000000);
+}
+
+body[data-dark="false"] .list-group-item {
+    background-color: #313131 !important;
+    color: #000 !important
+}
+
+body[data-dark="false"] .list-group-item-action:hover {
+    background-color: #404040 !important;
+}
+
+body[data-dark="false"] .list-group-item.active {
+    background-color: #0a47a9 !important; 
+    color: #000 !important
+}
+
+/* Old purple buttons for secondary CSS */
+/* body[data-dark="true"] .btn-secondary {
+    background-color: #b23cfd !important;
+    color: #eee !important;
+}
+
+body[data-dark="true"] .btn-secondary:hover, body[data-dark="true"] .btn-secondary:focus {
+    background-color: #a316fd !important;
+    color: #eee !important;
+}
+
+body[data-dark="true"] .btn-secondary:active {
+    background-color: #8102d1 !important;
+    color: #eee !important
+}
+*/
+
+body[data-dark="false"] .btn-secondary {
+    background-color: #e6ebf2 !important;
+}
+
+body[data-dark="false"] .btn-secondary:hover, body[data-dark="true"] .btn-secondary:focus {
+    background-color: #c3d2e7 !important;
+}
+
+body[data-dark="false"] .btn-secondary:active {
+    background-color: #a3b2c9 !important;
+}
+
+body[data-dark="true"] .modal-footer {
+    border-top: 2px solid #4f4f4f !important;
+    color: #4f4f4f;
+}
+
+body[data-dark="true"] .modal-header {
+    border-bottom: 2px solid #4f4f4f !important;
+    color: #4f4f4f;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 800;
+}
+
+body[data-dark="true"] .modal-body {
+    border-bottom: 2px solid #4f4f4f !important;
+    color: #4f4f4f;
+    font-family: 'Jost', sans-serif;
+}
+
+body[data-dark="false"] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body[data-dark="false"] .a:not(.gm-style-cc a) {
+    color: #1266f1 !important;
+}
+
+body[data-dark="false"] .a:not(.gm-style-cc a):hover {
+    color: #0e52c1 !important;
+}
+
+body[data-dark="false"] a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-brand):not(.page-link):not(.carousel-control-prev):not(.carousel-control-next):not(.gm-style-cc a) {
+    color: #72a4f7 !important;
+}
+
+body[data-dark="false"] a:not(.sidenav-link):not(.btn):not(.dropdown-item):not(.nav-link):not(.navbar-brand):not(.page-link):not(.carousel-control-prev):not(.carousel-control-next):not(.gm-style-cc a):hover {
+    color: #5a95f5 !important;
+}
+
+body[data-dark="false"] .ripple-wave.active {
+    background-color: transparent !important
+}
+
+body[data-dark="true"] .countdown-row {
+    background-color: #313131 !important;
+}
+
+body[data-dark="true"] .loader-row {
+    color: #2a2a2a !important;
+}
+
+body[data-dark="true"] code, body[data-dark="true"] .code {
+    color: #76d0fb !important
+}
+
+body[data-dark="false"] code, body[data-dark="false"] .code {
+    color: #d63384 !important;
+}
+body .modal{
+    filter: drop-shadow(0px 0px 15px #000000);
+}
